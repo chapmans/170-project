@@ -1,7 +1,3 @@
-exports.category = function(req, res){
-  res.render('tbd');
-};
-
 exports.coffee = function(req, res) {
   res.render('category', {
       'category': 'coffee',

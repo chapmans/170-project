@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var project = require('./routes/project');
+var tbd = require('./routes/tbd');
 // Example route
 // var user = require('./routes/user');
 
@@ -39,7 +40,16 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/category/coffee', project.coffee);
 app.get('/category/desserts', project.desserts);
-app.get('/category/:name', project.category);
+app.get('/category/:name', tbd.category);
+app.get('/about', tbd.about);
+app.get('/help', tbd.help);
+app.get('/mapcoffee', tbd.mapcoffee);
+app.get('/mapdesserts', tbd.mapdesserts);
+app.get('/map', tbd.map);
+app.get('/directions', tbd.directions);
+app.get('/facebook', tbd.social);
+app.get('/twitter', tbd.social);
+app.get('/instagram', tbd.social);
 // Example route
 // app.get('/users', user.list);
 
