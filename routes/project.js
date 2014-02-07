@@ -78,6 +78,7 @@ exports.coffee = function(req, res) {
 exports.desserts = function(req, res) {
   res.render('category', {
       'category': 'desserts',
+      'icon': 'icon-cupcake',
       'places': [
         { 'place': 'Chocolat',
           'rating': 4.5,

@@ -1,5 +1,6 @@
 exports.category = function(req, res){
   res.render('tbd', {
+  	name: 'category',
   	links: [
   		{   'url': '/',
   			'title': 'back/home'
@@ -13,6 +14,7 @@ exports.category = function(req, res){
 
 exports.about = function(req, res){
   res.render('tbd', {
+  	name: 'about',
   	links: [
   		{   'url': '/',
   			'title': 'back'
@@ -23,6 +25,7 @@ exports.about = function(req, res){
 
 exports.help = function(req, res){
   res.render('tbd', {
+  	name: 'help',
   	links: [
   		{   'url': '/',
   			'title': 'back'
@@ -33,9 +36,10 @@ exports.help = function(req, res){
 
 exports.mapdesserts = function(req, res){
   res.render('tbd', {
+  	name: 'map of a place',
   	links: [
   		{   'url': '/desserts',
-  			'title': 'back'
+  			'title': 'back to category page'
   		},
   		{	'url': '/',
   			'title': 'home'
@@ -49,9 +53,10 @@ exports.mapdesserts = function(req, res){
 
 exports.mapcoffee = function(req, res){
   res.render('tbd', {
+  	name: 'map of a place',
   	links: [
   		{   'url': '/coffee',
-  			'title': 'back'
+  			'title': 'back to category page'
   		},
   		{	'url': '/',
   			'title': 'home'
@@ -65,9 +70,10 @@ exports.mapcoffee = function(req, res){
 
 exports.map = function(req, res){
   res.render('tbd', {
+  	name: 'map of a place',
   	links: [
   		{   'url': 'javascript:history.go(-1)',
-  			'title': 'back'
+  			'title': 'back to category page'
   		},
   		{	'url': '/',
   			'title': 'home'
@@ -81,6 +87,7 @@ exports.map = function(req, res){
 
 exports.directions = function(req, res){
   res.render('tbd', {
+  	name: 'directions to a place',
   	links: [
   		{   'url': 'javascript:history.go(-1)',
   			'title': 'back'
@@ -90,13 +97,14 @@ exports.directions = function(req, res){
   		},
   		{	'url': '/map',
   			'title': 'map'
-  		}
+  		},
   	]
   });
 };
 
 exports.social = function(req, res){
   res.render('tbd', {
+  	name: 'social icon',
   	links: [
   		{   'url': '#',
   			'title': '(none - external link)'
