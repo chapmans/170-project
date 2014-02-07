@@ -27,16 +27,17 @@
 	<div class="container">
 	
 
-		<h1>{{category}}</h1>
+		<h1 class="p-category"><span class="p-cat-icon {{icon}}"></span> {{category}}</h1>
 
 		<div class="row">
 			<ul id="places">
 			{{#each places}}
 				<li class="place">
 					<div class="name">
-						<div class="next">&gt;</div>
+						<a class="next" href="map">GO</a>
+						<a class="open-down icon-uniF48B"></a>
 						<div class="title">{{place}}</div>
-						<div class="info"><a class="open-down">V</a> {{direction}} {{distance}} mi</div>
+						<div class="info">{{direction}} {{distance}} mi</div>
 					</div>
 					<div class="more-info">
 						<div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div>
