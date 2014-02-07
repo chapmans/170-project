@@ -1,6 +1,80 @@
 body {
      background: #343434 url('../images/debut_dark.png') top left repeat;
      color:#97B895;
+     font-family: Bitter, Georgia, serif;
+}
+
+a, a:active, a:hover {
+  text-decoration: none;
+}
+
+a:hover .l-lt {
+  color:#898989;
+}
+
+.logo-name {
+  text-align: center;
+}
+
+.logo-name a, .logo-name-sm a {
+  color:#FFB33C;
+}
+
+.logo-mom {
+  font-family: 'Lily Script One', serif;
+}
+
+.logo-and {
+  display:inline-block;
+  position:relative;
+  width:40px;
+  height:40px;
+  font-size:40px;
+  font-family: 'Ovo', serif;
+  background: rgba(255,255,255,0.3);
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+  z-index:2;
+}
+
+.logo-pop {
+  font-family: 'Sniglet', sans-serif;
+  position:relative;
+  left:-4px;
+  z-index:1;
+}
+
+.logo-name-sm {
+  font-size:24px;
+}
+
+.logo-name-sm .logo-and {
+  width:24px;
+  height:24px;
+  font-size:24px;
+  -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
+  text-align:center;
+}
+
+.category {
+  font-size:18px;
+  text-transform:lowercase;
+}
+
+.category a {
+  color:#FFB33C;
+}
+
+.topbar {
+  background:rgba(255,255,255,0.2);
+}
+
+.topbar h1 {
+  margin:0;
+  padding:12px;
 }
 
 .center-block {
