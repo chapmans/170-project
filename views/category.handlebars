@@ -9,6 +9,7 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/icomoon.css" rel="stylesheet">
 	<link href="/css/style.css" rel="stylesheet">
+	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,17 +21,36 @@
 
 <body>
 	<div class="container">
-		<h1>Mom&pop</h1>
+		<div class="header">
+			<a href="/">Mom&pop</a>
+		</div>
+
+		<h1>{{category}}</h1>
 
 		<div class="row">
-			{{#each items}}
-				<div class="col-md-6 col-xs-6 center-block">
-					<a href="/category/{{url}}" class="row cat-link">
-						<div class="cat-icon {{icon}}" style="background:url('images/cat_{{url}}.png') no-repeat center; background-size:contain"></div>
-						{{name}}
-					</a>
-				</div>
+			<ul id="places">
+			{{#each places}}
+				<li class="place">
+					<div class="name">
+						<div class="next">&gt;</div>
+						<div class="title">{{place}}</div>
+						<div class="info"><a class="open-down">V</a> {{direction}} {{distance}} mi</div>
+					</div>
+					<div class="more-info">
+						<div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div>
+						<div class="hours">Today's hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div>
+						<div class="site"><a href="{{site}}">{{site}}</a></div>
+						<div class="payment">
+							{{#if payment}}
+								Accepts credit cards
+							{{else}}
+								Cash only
+							{{/if}}
+						</div>
+					</div>
+				</li>
 			{{/each}}
+		</ul>
 		</div>
 	</div>
 

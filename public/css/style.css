@@ -1,35 +1,61 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
+body {
+     background: #343434 url('../images/debut_dark.png') top left repeat;
+     color:#97B895;
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  text-align: center;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
+.cat-icon {
+  font-size:56px;
+  color:#222222;
+  padding:15px;
+  opacity:0.8;
 }
 
-.jumbotron:after {
-     content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;	
+.cat-icon:hover {
+  opacity:1;
 }
 
-.jumbotron p {
-     color: #6e6e6e;
+.more-info {
+  display: none;
 }
 
-.project a {
-     text-align: center;
+a.cat-link {
+  display: block;
+  text-decoration:none;
+}
+
+#places {
+  margin:0;
+  padding:0;
+}
+
+#places li {
+  list-style: none;
+  margin: 5px 10px;
+  padding: 10px;
+  background: rgba(150,150,150,0.5);
+}
+
+.place .title {
+  font-size:24px;
+}
+
+.place .info {
+  font-size:14px;
+}
+
+.place .next {
+  font-size:38px;
+  float:right;
+}
+
+.place .rating {
+  font-size:28px;
 }
