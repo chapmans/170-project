@@ -1,6 +1,7 @@
 function handleNoGeolocation() {
 	alert('Your browser does not support geolocation.')
 }
+
 function initMap() {
 	if(navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(setMap, handleNoGeolocation, {}); 
