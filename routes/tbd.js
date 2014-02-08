@@ -6,7 +6,8 @@ exports.category = function(req, res){
   			'title': 'back/home'
   		},
   		{   'url': '/map',
-  			'title': 'map (for each item)'
+  			'title': 'map (for each item)',
+        'address': "8657 Villa La Jolla Dr, La Jolla, CA 92037"
   		},
   	]
   });
