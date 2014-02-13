@@ -26,7 +26,7 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-app.use(express.cookieParser('Intro HCI secret key'));
+app.use(express.cookieParser('housekeeping'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
@@ -38,9 +38,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/category/coffee', project.coffee);
-app.get('/category/desserts', project.desserts);
-app.get('/category/:name', tbd.category);
+app.get('/category/:name', project.category);
 app.get('/about', tbd.about);
 app.get('/help', tbd.help);
 app.get('/mapcoffee', tbd.mapcoffee);

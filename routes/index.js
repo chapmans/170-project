@@ -16,7 +16,7 @@ exports.view = function(req, res){
 			},
 			{ 'name': 'Restaurants',
 				'url': 'restaurants',
-				'icon': 'icon-pizza'
+				'icon': 'icon-food'
 			},
 			{ 'name': 'Clothing',
 				'url': 'clothing',
