@@ -10,7 +10,7 @@ var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var project = require('./routes/project');
-var tbd = require('./routes/tbd');
+var api = require('./routes/api');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,6 +51,7 @@ app.get('/about', project.about);
 app.get('/help', project.help);
 app.get('/places/:category/:id', project.map);
 app.get('/places/:category/:id/directions', project.directions);
+app.get('/loadmore/:name', api.getMorePlaces);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
