@@ -11,3 +11,29 @@ exports.category = function(req, res) {
 	var cat = req.params.name;
 	res.render('category', data[cat]);
 }
+
+exports.map = function(req, res) {
+	var cat = req.params.category;
+	var id = req.params.id;
+	var place = data[cat].places[id];
+	place.id = id;
+	place.category = cat;
+	res.render('map', place);
+}
+
+exports.directions = function(req, res) {
+	var cat = req.params.category;
+	var id = req.params.id;
+	var place = data[cat].places[id];
+	place.id = id;
+	place.category = cat;
+	res.render('directions', place);
+}
+
+exports.about = function(req, res) {
+	res.render('about');
+}
+
+exports.help = function(req, res) {
+	res.render('help');
+}

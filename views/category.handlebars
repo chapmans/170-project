@@ -1,30 +1,5 @@
-<!doctype html>
+{{> header}}
 
-<html>
-<head>
-	<title>Mom&pop</title>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Sniglet|Lily+Script+One|Ovo|Bitter' rel='stylesheet' type='text/css'>
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/icomoon.css" rel="stylesheet">
-	<link href="/css/style.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
-
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->				
-</head>
-
-<body>
-	<div class="topbar">
-		<h1 class="logo-name-sm"><a href="/"><span class="l-lt">&lt;</span> <span class="logo-mom">Mom</span><span class="logo-and">&</span><span class="logo-pop">pop</span></a></h1>
-	</div>
-	<div class="container">
 		<h1 class="p-category"><span class="p-cat-icon {{icon}}"></span> {{category}}</h1>
 
 		<div class="row">
@@ -32,7 +7,7 @@
 			{{#each places}}
 				<li class="place">
 					<div class="name">
-						<a class="next" href="/map{{category}}">GO</a>
+						<a class="next" href="/places/{{../category}}/{{@index}}">GO</a>
 						<a class="open-down icon-uniF48B"></a>
 						<div class="title">{{place}}</div>
 						<div class="info">{{direction}} {{distance}} mi</div>
@@ -54,15 +29,5 @@
 		</ul>
 		</div>
 	</div>
-	<div class="footer">
-		<div style="float:right">
-		<a class="social icon-facebook2" href="facebook"></a><a class="social icon-twitter" href="twitter"></a><a class="social icon-instagram" href="instagram"></a>
-		</div>
-		<a href="/about">about</a> | <a href="/help">help</a>
-	</div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/script.js"></script>
-</body>
-</html>
+{{> footer}}

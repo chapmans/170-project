@@ -1,0 +1,36 @@
+{{> header}}
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+	<script src="/js/map.js"></script>
+
+	<script type="text/javascript">
+		google.maps.event.addDomListener(window, 'load', initMap);
+	</script>
+
+	<div id="place-info" class="row">
+		<div class="col-md-12 col-xs-12">
+		<h1 id="place-name">
+			{{place}}
+		</h1>
+		<div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div>
+		<div class="hours">Today's hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div>
+		<div class="site"><a href="{{site}}">{{site}}</a></div>
+		<div class="payment">
+			{{#if payment}}
+				Accepts credit cards
+			{{else}}
+				Cash only
+			{{/if}}
+		</div>
+	</div>
+	</div>
+
+	<div id="panel" class="row pm"></div>
+
+	<div class="row">
+		<div class="col-md-12 col-xs-12 text-right">
+			<a href="/places/{{category}}/{{id}}/directions">&gt; directions</a>
+		</div>
+	</div>
+
+{{> footer}}

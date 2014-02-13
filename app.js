@@ -6,7 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var project = require('./routes/project');
@@ -15,6 +15,14 @@ var tbd = require('./routes/tbd');
 // var user = require('./routes/user');
 
 var app = express();
+
+// Handlebars
+/* var hbs = handlebars.create({
+    // Specify helpers which are only registered on this instance.
+    helpers: {
+        category: function(block) { return category; }
+    }
+}); */
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -39,17 +47,10 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/category/:name', project.category);
-app.get('/about', tbd.about);
-app.get('/help', tbd.help);
-app.get('/mapcoffee', tbd.mapcoffee);
-app.get('/mapdesserts', tbd.mapdesserts);
-app.get('/map', tbd.map);
-app.get('/directions', tbd.directions);
-app.get('/facebook', tbd.social);
-app.get('/twitter', tbd.social);
-app.get('/instagram', tbd.social);
-// Example route
-// app.get('/users', user.list);
+app.get('/about', project.about);
+app.get('/help', project.help);
+app.get('/places/:category/:id', project.map);
+app.get('/places/:category/:id/directions', project.directions);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

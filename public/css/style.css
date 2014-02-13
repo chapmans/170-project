@@ -102,10 +102,11 @@ a:hover .l-lt {
 }
 
 .cat-icon {
-  font-size:56px;
+  font-size:36px;
   color:#222222;
   padding:15px;
   opacity:0.8;
+  margin-bottom: 3px;
 }
 
 .cat-icon:hover {
@@ -194,3 +195,39 @@ a.icon-uniF48B {
 a.icon-uniF48A {
   color:#FF803C;
 }*/
+
+.pm {
+	height: 200px;
+}
+
+.pd {
+	height: 400px;
+}
+
+#cat-coffee {
+	color: #c6842f;
+}
+
+#cat-desserts {
+	color: #48c5ae;
+}
+
+#cat-restaurants {
+	color: #bbc111;
+}
+
+#cat-clothing {
+	color: #bb2f67;
+}
+
+#cat-trinkets {
+	color: #8dbb75;
+}
+
+#cat-music {
+	color: #368e68;
+}
+
+#place-info {
+	margin-bottom:30px;
+}
