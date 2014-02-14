@@ -36,23 +36,6 @@
 					"sunday": ["10:00a", "6:00p"]
 				}
 			},
-			{ "place": "Revivals",
-				"rating": 3.5,
-				"open": true,
-				"distance": 0.5,
-				"direction": "southeast",
-				"payment": true,
-				"site": "http://www.revivalsstores.com/",
-				"hours": {
-					"monday": ["10:00a", "6:00p"],
-					"tuesday": ["10:00a", "6:00p"],
-					"wednesday": ["10:00a", "6:00p"],
-					"thursday": ["10:00a", "6:00p"],
-					"friday": ["10:00a", "6:00p"],
-					"saturday": ["10:00a", "6:00p"],
-					"sunday": ["10:00a", "5:00p"]
-				}
-			}, 
 			{ "place": "Urban Renewal",
 				"rating": 4.5,
 				"open": true,

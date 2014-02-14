@@ -90,19 +90,19 @@
 					"sunday": ["7:00a", "6:00p"]
 				}
 			},
-			{ "place": "Industrial Grind Coffee",
+			{ "place": "Roast Coach",
 				"rating": 4.5,
 				"open": true,
 				"distance": 0.7,
 				"direction": "southeast",
 				"payment": true,
-				"site": "http://www.industrialgrindcoffee.com/",
+				"site": "http://roastcoach.com/",
 				"hours": {
-					"monday": ["7:00a", "6:00p"],
-					"tuesday": ["7:00a", "6:00p"],
-					"wednesday": ["7:00a", "6:00p"],
-					"thursday": ["7:00a", "6:00p"],
-					"friday": ["7:00a", "6:00p"],
+					"monday": ["7:00a", "1:00p"],
+					"tuesday": ["7:00a", "1:00p"],
+					"wednesday": ["7:00a", "1:00p"],
+					"thursday": ["7:00a", "1:00p"],
+					"friday": ["7:00a", "1:00p"],
 					"saturday": ["8:00a", "1:00p"],
 					"sunday": ["8:00a", "1:00p"]
 				}
