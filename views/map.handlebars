@@ -4,7 +4,9 @@
 	<script src="/js/map.js"></script>
 
 	<script type="text/javascript">
-		google.maps.event.addDomListener(window, 'load', initMap);
+		window.setMap = true;
+		window.setDirections = false;
+		google.maps.event.addDomListener(window, 'load', init);
 	</script>
 
 	<div id="place-info" class="row">
@@ -25,7 +27,7 @@
 	</div>
 	</div>
 
-	<div id="panel" class="row pm"></div>
+	<div id="map_panel" class="row pm"></div>
 
 	<div class="row">
 		<div class="col-md-12 col-xs-12 text-right">
