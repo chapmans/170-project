@@ -2,73 +2,75 @@
 	"category": "music",
 	"icon": "icon-uniF608",
 	"places": [
-		{ "place": "M-Theory Music",
-			"rating": 4.5,
-			"open": false,
-			"distance": 2.3,
-			"direction": "south",
-			"payment": true,
-			"site": "http://www.mtheorymusic.com/",
-			"hours": {
-				"monday": ["10:00a", "8:00p"],
-				"tuesday": ["10:00a", "8:00p"],
-				"wednesday": ["10:00a", "8:00p"],
-				"thursday": ["10:00a", "8:00p"],
-				"friday": ["10:00a", "8:00p"],
-				"saturday": ["10:00a", "8:00p"],
-				"sunday": ["10:00a", "7:00p"]
+		[
+			{ "place": "M-Theory Music",
+				"rating": 4.5,
+				"open": false,
+				"distance": 2.3,
+				"direction": "south",
+				"payment": true,
+				"site": "http://www.mtheorymusic.com/",
+				"hours": {
+					"monday": ["10:00a", "8:00p"],
+					"tuesday": ["10:00a", "8:00p"],
+					"wednesday": ["10:00a", "8:00p"],
+					"thursday": ["10:00a", "8:00p"],
+					"friday": ["10:00a", "8:00p"],
+					"saturday": ["10:00a", "8:00p"],
+					"sunday": ["10:00a", "7:00p"]
+				}
+			},
+			{ "place": "Record City",
+				"rating": 4.5,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http//www.recordcityonline.com/",
+				"hours": {
+					"monday": ["11:00a", "7:00p"],
+					"tuesday": ["11:00a", "7:00p"],
+					"wednesday": ["11:00a", "7:00p"],
+					"thursday": ["11:00a", "7:00p"],
+					"friday": ["11:00a", "7:00p"],
+					"saturday": ["11:00a", "7:00p"],
+					"sunday": ["12:00a", "5:00p"]
+				}
+			},
+			{ "place": "Off the Record",
+				"rating": 3,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.offtherecordmusic.com/",
+				"hours": {
+					"monday": ["11:00a", "8:00p"],
+					"tuesday": ["11:00a", "8:00p"],
+					"wednesday": ["11:00a", "8:00p"],
+					"thursday": ["11:00a", "8:00p"],
+					"friday": ["11:00a", "8:00p"],
+					"saturday": ["11:00a", "8:00p"],
+					"sunday": ["11:00a", "8:00p"]
+				}
+			}, 
+			{ "place": "Nickelodeon Records",
+				"rating": 4,
+				"open": true,
+				"distance": 3.2,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.nickelodeonrecords.com/",
+				"hours": {
+					"monday": ["10:00a", "2:00p"],
+					"tuesday": ["11:00a", "5:30p"],
+					"wednesday": ["11:00a", "5:30p"],
+					"thursday": ["11:00a", "5:30p"],
+					"friday": ["11:00a", "5:30p"],
+					"saturday": ["11:00a", "5:30p"],
+					"sunday": ["11:00a", "5:30p"]
+				}
 			}
-		},
-		{ "place": "Record City",
-			"rating": 4.5,
-			"open": true,
-			"distance": 0.5,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http//www.recordcityonline.com/",
-			"hours": {
-				"monday": ["11:00a", "7:00p"],
-				"tuesday": ["11:00a", "7:00p"],
-				"wednesday": ["11:00a", "7:00p"],
-				"thursday": ["11:00a", "7:00p"],
-				"friday": ["11:00a", "7:00p"],
-				"saturday": ["11:00a", "7:00p"],
-				"sunday": ["12:00a", "5:00p"]
-			}
-		},
-		{ "place": "Off the Record",
-			"rating": 3,
-			"open": true,
-			"distance": 0.5,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.offtherecordmusic.com/",
-			"hours": {
-				"monday": ["11:00a", "8:00p"],
-				"tuesday": ["11:00a", "8:00p"],
-				"wednesday": ["11:00a", "8:00p"],
-				"thursday": ["11:00a", "8:00p"],
-				"friday": ["11:00a", "8:00p"],
-				"saturday": ["11:00a", "8:00p"],
-				"sunday": ["11:00a", "8:00p"]
-			}
-		}, 
-		{ "place": "Nickelodeon Records",
-			"rating": 4,
-			"open": true,
-			"distance": 3.2,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.nickelodeonrecords.com/",
-			"hours": {
-				"monday": ["10:00a", "2:00p"],
-				"tuesday": ["11:00a", "5:30p"],
-				"wednesday": ["11:00a", "5:30p"],
-				"thursday": ["11:00a", "5:30p"],
-				"friday": ["11:00a", "5:30p"],
-				"saturday": ["11:00a", "5:30p"],
-				"sunday": ["11:00a", "5:30p"]
-			}
-		}
+		]
 	]
 }

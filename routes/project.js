@@ -9,7 +9,9 @@ var data = {
 
 exports.category = function(req, res) {
 	var cat = req.params.name;
-	res.render('category', data[cat]);
+	var page = req.query.page;
+	var print = data[cat];
+	res.render('category', print);
 }
 
 exports.map = function(req, res) {

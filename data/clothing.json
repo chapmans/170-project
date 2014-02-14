@@ -2,71 +2,73 @@
 	"category": "clothing",
 	"icon": "icon-uniF53C",
 	"places": [
-		{ "place": "Thrift Trader",
-			"rating": 4,
-			"open": false,
-			"distance": 0.3,
-			"direction": "south",
-			"payment": true,
-			"site": "http://www.thrifttrader.org/",
-			"hours": {
-				"monday": ["10:00a", "7:00p"],
-				"tuesday": ["10:00a", "7:00p"],
-				"wednesday": ["10:00a", "7:00p"],
-				"thursday": ["10:00a", "7:00p"],
-				"friday": ["10:00a", "7:00p"],
-				"saturday": ["10:30a", "7:00p"],
-				"sunday": ["10:00a", "6:00p"]
+		[
+			{ "place": "Thrift Trader",
+				"rating": 4,
+				"open": false,
+				"distance": 0.3,
+				"direction": "south",
+				"payment": true,
+				"site": "http://www.thrifttrader.org/",
+				"hours": {
+					"monday": ["10:00a", "7:00p"],
+					"tuesday": ["10:00a", "7:00p"],
+					"wednesday": ["10:00a", "7:00p"],
+					"thursday": ["10:00a", "7:00p"],
+					"friday": ["10:00a", "7:00p"],
+					"saturday": ["10:30a", "7:00p"],
+					"sunday": ["10:00a", "6:00p"]
+				}
+			},
+			{ "place": "City Digz",
+				"rating": 4,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": "true",
+				"hours": {
+					"monday": ["10:00a", "6:00p"],
+					"tuesday": ["10:00a", "6:00p"],
+					"wednesday": ["10:00a", "6:00p"],
+					"thursday": ["10:00a", "6:00p"],
+					"friday": ["10:00a", "6:00p"],
+					"saturday": ["10:00a", "6:00p"],
+					"sunday": ["10:00a", "6:00p"]
+				}
+			},
+			{ "place": "Revivals",
+				"rating": 3.5,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.revivalsstores.com/",
+				"hours": {
+					"monday": ["10:00a", "6:00p"],
+					"tuesday": ["10:00a", "6:00p"],
+					"wednesday": ["10:00a", "6:00p"],
+					"thursday": ["10:00a", "6:00p"],
+					"friday": ["10:00a", "6:00p"],
+					"saturday": ["10:00a", "6:00p"],
+					"sunday": ["10:00a", "5:00p"]
+				}
+			}, 
+			{ "place": "Urban Renewal",
+				"rating": 4.5,
+				"open": true,
+				"distance": 3.2,
+				"direction": "southeast",
+				"payment": true,
+				"hours": {
+					"monday": ["11:00a", "7:00p"],
+					"tuesday": ["11:00a", "7:00p"],
+					"wednesday": ["11:00a", "7:00p"],
+					"thursday": ["11:00a", "7:00p"],
+					"friday": ["11:00a", "7:00p"],
+					"saturday": ["11:00a", "7:00p"],
+					"sunday": ["12:00a", "5:00p"]
+				}
 			}
-		},
-		{ "place": "City Digz",
-			"rating": 4,
-			"open": true,
-			"distance": 0.5,
-			"direction": "southeast",
-			"payment": "true",
-			"hours": {
-				"monday": ["10:00a", "6:00p"],
-				"tuesday": ["10:00a", "6:00p"],
-				"wednesday": ["10:00a", "6:00p"],
-				"thursday": ["10:00a", "6:00p"],
-				"friday": ["10:00a", "6:00p"],
-				"saturday": ["10:00a", "6:00p"],
-				"sunday": ["10:00a", "6:00p"]
-			}
-		},
-		{ "place": "Revivals",
-			"rating": 3.5,
-			"open": true,
-			"distance": 0.5,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.revivalsstores.com/",
-			"hours": {
-				"monday": ["10:00a", "6:00p"],
-				"tuesday": ["10:00a", "6:00p"],
-				"wednesday": ["10:00a", "6:00p"],
-				"thursday": ["10:00a", "6:00p"],
-				"friday": ["10:00a", "6:00p"],
-				"saturday": ["10:00a", "6:00p"],
-				"sunday": ["10:00a", "5:00p"]
-			}
-		}, 
-		{ "place": "Urban Renewal",
-			"rating": 4.5,
-			"open": true,
-			"distance": 3.2,
-			"direction": "southeast",
-			"payment": true,
-			"hours": {
-				"monday": ["11:00a", "7:00p"],
-				"tuesday": ["11:00a", "7:00p"],
-				"wednesday": ["11:00a", "7:00p"],
-				"thursday": ["11:00a", "7:00p"],
-				"friday": ["11:00a", "7:00p"],
-				"saturday": ["11:00a", "7:00p"],
-				"sunday": ["12:00a", "5:00p"]
-			}
-		}
+		]
 	]
 }

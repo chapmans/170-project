@@ -2,140 +2,144 @@
 	"category": "desserts",
 	"icon": "icon-cupcake",
 	"places": [
-		{ "place": "Chocolat",
-			"rating": 4.5,
-			"open": false,
-			"distance": 0.9,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://chocolat-hillcrest.com",
-			"hours": {
-				"monday": ["6:00a", "6:00p"],
-				"tuesday": ["6:00a", "6:00p"],
-				"wednesday": ["6:00a", "6:00p"],
-				"thursday": ["6:00a", "6:00p"],
-				"friday": ["6:00a", "6:00p"],
-				"saturday": ["6:30a", "6:00p"],
-				"sunday": ["6:30a", "6:00p"]
+		[
+			{ "place": "Chocolat",
+				"rating": 4.5,
+				"open": false,
+				"distance": 0.9,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://chocolat-hillcrest.com",
+				"hours": {
+					"monday": ["6:00a", "6:00p"],
+					"tuesday": ["6:00a", "6:00p"],
+					"wednesday": ["6:00a", "6:00p"],
+					"thursday": ["6:00a", "6:00p"],
+					"friday": ["6:00a", "6:00p"],
+					"saturday": ["6:30a", "6:00p"],
+					"sunday": ["6:30a", "6:00p"]
+				}
+			},
+			{ "place": "Babycakes",
+				"rating": 4.5,
+				"open": true,
+				"site": "http://babycakessandiego.com/hillcrest",
+				"distance": 1.0,
+				"direction": "southeast",
+				"payment": "true",
+				"hours": {
+					"monday": ["6:00a", "7:00p"],
+					"tuesday": ["6:00a", "7:00p"],
+					"wednesday": ["6:00a", "7:00p"],
+					"thursday": ["6:00a", "7:00p"],
+					"friday": ["6:00a", "7:00p"],
+					"saturday": ["7:00a", "7:00p"],
+					"sunday": ["7:00a", "2:00p"]
+				}
+			},
+			{ "place": "D Bar San Diego",
+				"rating": 4.5,
+				"open": true,
+				"site": "http://dbarsandiego.com",
+				"distance": 1.3,
+				"direction": "southeast",
+				"payment": true,
+				"hours": {
+					"monday": ["6:30a", "6:30p"],
+					"tuesday": ["6:30a", "6:30p"],
+					"wednesday": ["6:30a", "6:30p"],
+					"thursday": ["6:30a", "6:30p"],
+					"friday": ["6:30a", "6:30p"],
+					"saturday": ["7:00a", "7:00p"],
+					"sunday": ["7:00a", "7:00p"]
+				}
+			}, 
+			{ "place": "Extraordinary Desserts",
+				"rating": 4.5,
+				"open": true,
+				"distance": 1.8,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://extraordinarydesserts.com",
+				"hours": {
+					"monday": ["7:00a", "6:00p"],
+					"tuesday": ["7:00a", "6:00p"],
+					"wednesday": ["7:00a", "6:00p"],
+					"thursday": ["7:00a", "6:00p"],
+					"friday": ["7:00a", "6:00p"],
+					"saturday": ["8:00a", "1:00p"],
+					"sunday": ["8:00a", "1:00p"]
+				}
 			}
-		},
-		{ "place": "Babycakes",
-			"rating": 4.5,
-			"open": true,
-			"site": "http://babycakessandiego.com/hillcrest",
-			"distance": 1.0,
-			"direction": "southeast",
-			"payment": "true",
-			"hours": {
-				"monday": ["6:00a", "7:00p"],
-				"tuesday": ["6:00a", "7:00p"],
-				"wednesday": ["6:00a", "7:00p"],
-				"thursday": ["6:00a", "7:00p"],
-				"friday": ["6:00a", "7:00p"],
-				"saturday": ["7:00a", "7:00p"],
-				"sunday": ["7:00a", "2:00p"]
+		], 
+		[
+			{ "place": "Heaven Sent Desserts",
+				"rating": 3.5,
+				"open": false,
+				"distance": 0.9,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.heavensentdesserts.com/",
+				"hours": {
+					"monday": ["11:00a", "10:00p"],
+					"tuesday": ["11:00a", "11:00p"],
+					"wednesday": ["11:00a", "11:00p"],
+					"thursday": ["11:00a", "11:00p"],
+					"friday": ["11:00a", "12:00a"],
+					"saturday": ["11:00a", "12:00a"],
+					"sunday": ["11:00a", "10:00p"]
+				}
+			},
+			{ "place": "Pappalecco",
+				"rating": 4.5,
+				"open": true,
+				"site": "http://www.pappalecco.com/",
+				"distance": 1.0,
+				"direction": "southeast",
+				"payment": "true",
+				"hours": {
+					"monday": ["7:00a", "9:30p"],
+					"tuesday": ["7:00a", "9:30p"],
+					"wednesday": ["7:00a", "9:30p"],
+					"thursday": ["7:00a", "9:30p"],
+					"friday": ["7:00a", "10:30p"],
+					"saturday": ["8:00a", "10:30p"],
+					"sunday": ["8:00a", "9:30p"]
+				}
+			},
+			{ "place": "Up2you Cafe",
+				"rating": 3.5,
+				"open": true,
+				"site": "http://www.up2youcafe.com/",
+				"distance": 3.3,
+				"direction": "southeast",
+				"payment": true,
+				"hours": {
+					"monday": ["12:30p", "10:00p"],
+					"tuesday": ["12:30p", "10:00p"],
+					"wednesday": ["12:30p", "10:00p"],
+					"thursday": ["12:30p", "11:00p"],
+					"friday": ["12:30p", "12:00a"],
+					"saturday": ["12:30p", "12:00a"],
+					"sunday": ["12:30p", "11:00p"]
+				}
+			}, 
+			{ "place": "Cafe Hue",
+				"rating": 3.5,
+				"open": true,
+				"distance": 1.8,
+				"direction": "east",
+				"payment": true,
+				"hours": {
+					"monday": ["12:00p", "11:00p"],
+					"tuesday": ["12:00p", "11:00p"],
+					"wednesday": ["12:00p", "11:00p"],
+					"thursday": ["12:00p", "11:00p"],
+					"friday": ["12:00p", "11:00p"],
+					"saturday": ["12:00p", "11:00p"],
+					"sunday": ["12:00p", "11:00p"]
+				}
 			}
-		},
-		{ "place": "D Bar San Diego",
-			"rating": 4.5,
-			"open": true,
-			"site": "http://dbarsandiego.com",
-			"distance": 1.3,
-			"direction": "southeast",
-			"payment": true,
-			"hours": {
-				"monday": ["6:30a", "6:30p"],
-				"tuesday": ["6:30a", "6:30p"],
-				"wednesday": ["6:30a", "6:30p"],
-				"thursday": ["6:30a", "6:30p"],
-				"friday": ["6:30a", "6:30p"],
-				"saturday": ["7:00a", "7:00p"],
-				"sunday": ["7:00a", "7:00p"]
-			}
-		}, 
-		{ "place": "Extraordinary Desserts",
-			"rating": 4.5,
-			"open": true,
-			"distance": 1.8,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://extraordinarydesserts.com",
-			"hours": {
-				"monday": ["7:00a", "6:00p"],
-				"tuesday": ["7:00a", "6:00p"],
-				"wednesday": ["7:00a", "6:00p"],
-				"thursday": ["7:00a", "6:00p"],
-				"friday": ["7:00a", "6:00p"],
-				"saturday": ["8:00a", "1:00p"],
-				"sunday": ["8:00a", "1:00p"]
-			}
-		},
-		{ "place": "Heaven Sent Desserts",
-			"rating": 3.5,
-			"open": false,
-			"distance": 0.9,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.heavensentdesserts.com/",
-			"hours": {
-				"monday": ["11:00a", "10:00p"],
-				"tuesday": ["11:00a", "11:00p"],
-				"wednesday": ["11:00a", "11:00p"],
-				"thursday": ["11:00a", "11:00p"],
-				"friday": ["11:00a", "12:00a"],
-				"saturday": ["11:00a", "12:00a"],
-				"sunday": ["11:00a", "10:00p"]
-			}
-		},
-		{ "place": "Pappalecco",
-			"rating": 4.5,
-			"open": true,
-			"site": "http://www.pappalecco.com/",
-			"distance": 1.0,
-			"direction": "southeast",
-			"payment": "true",
-			"hours": {
-				"monday": ["7:00a", "9:30p"],
-				"tuesday": ["7:00a", "9:30p"],
-				"wednesday": ["7:00a", "9:30p"],
-				"thursday": ["7:00a", "9:30p"],
-				"friday": ["7:00a", "10:30p"],
-				"saturday": ["8:00a", "10:30p"],
-				"sunday": ["8:00a", "9:30p"]
-			}
-		},
-		{ "place": "Up2you Cafe",
-			"rating": 3.5,
-			"open": true,
-			"site": "http://www.up2youcafe.com/",
-			"distance": 3.3,
-			"direction": "southeast",
-			"payment": true,
-			"hours": {
-				"monday": ["12:30p", "10:00p"],
-				"tuesday": ["12:30p", "10:00p"],
-				"wednesday": ["12:30p", "10:00p"],
-				"thursday": ["12:30p", "11:00p"],
-				"friday": ["12:30p", "12:00a"],
-				"saturday": ["12:30p", "12:00a"],
-				"sunday": ["12:30p", "11:00p"]
-			}
-		}, 
-		{ "place": "Cafe Hue",
-			"rating": 3.5,
-			"open": true,
-			"distance": 1.8,
-			"direction": "east",
-			"payment": true,
-			"hours": {
-				"monday": ["12:00p", "11:00p"],
-				"tuesday": ["12:00p", "11:00p"],
-				"wednesday": ["12:00p", "11:00p"],
-				"thursday": ["12:00p", "11:00p"],
-				"friday": ["12:00p", "11:00p"],
-				"saturday": ["12:00p", "11:00p"],
-				"sunday": ["12:00p", "11:00p"]
-			}
-		}
+		]
 	]
 }

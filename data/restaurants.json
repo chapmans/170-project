@@ -2,73 +2,75 @@
 	"category": "restaurants",
 	"icon": "icon-food",
 	"places": [
-		{ "place": "Phil's BBQ",
-			"rating": 4.5,
-			"open": false,
-			"distance": 6.3,
-			"direction": "south",
-			"payment": true,
-			"site": "http://www.philsbbq.net/",
-			"hours": {
-				"monday": ["0h"],
-				"tuesday": ["11:00a", "10:00p"],
-				"wednesday": ["11:00a", "10:00p"],
-				"thursday": ["11:00a", "10:00p"],
-				"friday": ["11:00a", "11:00p"],
-				"saturday": ["11:00a", "10:00p"],
-				"sunday": ["11:00a", "10:00p"]
+		[
+			{ "place": "Phil's BBQ",
+				"rating": 4.5,
+				"open": false,
+				"distance": 6.3,
+				"direction": "south",
+				"payment": true,
+				"site": "http://www.philsbbq.net/",
+				"hours": {
+					"monday": ["0h"],
+					"tuesday": ["11:00a", "10:00p"],
+					"wednesday": ["11:00a", "10:00p"],
+					"thursday": ["11:00a", "10:00p"],
+					"friday": ["11:00a", "11:00p"],
+					"saturday": ["11:00a", "10:00p"],
+					"sunday": ["11:00a", "10:00p"]
+				}
+			},
+			{ "place": "Carnitas' Snack Shack",
+				"rating": 4.5,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://carnitassnackshack.com/",
+				"hours": {
+					"monday": ["12:00p", "12:00a"],
+					"tuesday": ["12:00p", "12:00a"],
+					"wednesday": ["12:00p", "12:00a"],
+					"thursday": ["12:00p", "12:00a"],
+					"friday": ["12:00p", "12:00a"],
+					"saturday": ["12:00p", "12:00a"],
+					"sunday": ["12:00p", "12:00a"]
+				}
+			},
+			{ "place": "Punjabi Tandoor",
+				"rating": 4.5,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.offtherecordmusic.com/",
+				"hours": {
+					"monday": ["11:00a", "4:00p", "5:00p", "10:00p"],
+					"tuesday": ["11:00a", "4:00p", "5:00p", "10:00p"],
+					"wednesday": ["11:00a", "4:00p", "5:00p", "10:00p"],
+					"thursday": ["11:00a", "4:00p", "5:00p", "10:00p"],
+					"friday": ["11:00a", "4:00p", "5:00p", "10:00p"],
+					"saturday": ["11:00a", "10:00p"],
+					"sunday": ["5:00p", "9:00p"]
+				}
+			}, 
+			{ "place": "Cucina Urbana",
+				"rating": 4.5,
+				"open": true,
+				"distance": 3.2,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.punjabitandoor.com/",
+				"hours": {
+					"monday": ["0h"],
+					"tuesday": ["11:30a", "2:00p", "5:00p", "10:00p"],
+					"wednesday": ["11:30a", "2:00p", "5:00p", "10:00p"],
+					"thursday": ["11:30a", "2:00p", "5:00p", "10:00p"],
+					"friday": ["11:30a", "11:00p"],
+					"saturday": ["5:00p", "11:00p"],
+					"sunday": ["4:30p", "9:00p"]
+				}
 			}
-		},
-		{ "place": "Carnitas' Snack Shack",
-			"rating": 4.5,
-			"open": true,
-			"distance": 0.5,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://carnitassnackshack.com/",
-			"hours": {
-				"monday": ["12:00p", "12:00a"],
-				"tuesday": ["12:00p", "12:00a"],
-				"wednesday": ["12:00p", "12:00a"],
-				"thursday": ["12:00p", "12:00a"],
-				"friday": ["12:00p", "12:00a"],
-				"saturday": ["12:00p", "12:00a"],
-				"sunday": ["12:00p", "12:00a"]
-			}
-		},
-		{ "place": "Punjabi Tandoor",
-			"rating": 4.5,
-			"open": true,
-			"distance": 0.5,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.offtherecordmusic.com/",
-			"hours": {
-				"monday": ["11:00a", "4:00p", "5:00p", "10:00p"],
-				"tuesday": ["11:00a", "4:00p", "5:00p", "10:00p"],
-				"wednesday": ["11:00a", "4:00p", "5:00p", "10:00p"],
-				"thursday": ["11:00a", "4:00p", "5:00p", "10:00p"],
-				"friday": ["11:00a", "4:00p", "5:00p", "10:00p"],
-				"saturday": ["11:00a", "10:00p"],
-				"sunday": ["5:00p", "9:00p"]
-			}
-		}, 
-		{ "place": "Cucina Urbana",
-			"rating": 4.5,
-			"open": true,
-			"distance": 3.2,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.punjabitandoor.com/",
-			"hours": {
-				"monday": ["0h"],
-				"tuesday": ["11:30a", "2:00p", "5:00p", "10:00p"],
-				"wednesday": ["11:30a", "2:00p", "5:00p", "10:00p"],
-				"thursday": ["11:30a", "2:00p", "5:00p", "10:00p"],
-				"friday": ["11:30a", "11:00p"],
-				"saturday": ["5:00p", "11:00p"],
-				"sunday": ["4:30p", "9:00p"]
-			}
-		}
+		]
 	]
 }

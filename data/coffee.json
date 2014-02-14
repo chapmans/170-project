@@ -2,175 +2,181 @@
 	"category": "coffee",
 	"icon": "icon-coffee",
 	"places": [
-		{ "place": "Bird Rock Coffee Roasters",
-			"rating": 4.5,
-			"open": false,
-			"distance": 0.2,
-			"direction": "south",
-			"payment": true,
-			"site": "http://www.birdrockcoffeeroasters.com/",
-			"hours": {
-				"monday": ["6:00a", "6:00p"],
-				"tuesday": ["6:00a", "6:00p"],
-				"wednesday": ["6:00a", "6:00p"],
-				"thursday": ["6:00a", "6:00p"],
-				"friday": ["6:00a", "6:00p"],
-				"saturday": ["6:30a", "6:00p"],
-				"sunday": ["6:30a", "6:00p"]
+		[
+			{ "place": "Bird Rock Coffee Roasters",
+				"rating": 4.5,
+				"open": false,
+				"distance": 0.2,
+				"direction": "south",
+				"payment": true,
+				"site": "http://www.birdrockcoffeeroasters.com/",
+				"hours": {
+					"monday": ["6:00a", "6:00p"],
+					"tuesday": ["6:00a", "6:00p"],
+					"wednesday": ["6:00a", "6:00p"],
+					"thursday": ["6:00a", "6:00p"],
+					"friday": ["6:00a", "6:00p"],
+					"saturday": ["6:30a", "6:00p"],
+					"sunday": ["6:30a", "6:00p"]
+				}
+			},
+			{ "place": "Clairemont Coffee",
+				"rating": 4.5,
+				"open": true,
+				"distance": 0.3,
+				"direction": "southeast",
+				"payment": "true",
+				"site": "http://clairemontcoffee.com/",
+				"hours": {
+					"monday": ["6:00a", "7:00p"],
+					"tuesday": ["6:00a", "7:00p"],
+					"wednesday": ["6:00a", "7:00p"],
+					"thursday": ["6:00a", "7:00p"],
+					"friday": ["6:00a", "7:00p"],
+					"saturday": ["7:00a", "7:00p"],
+					"sunday": ["7:00a", "2:00p"]
+				}
+			},
+			{ "place": "Dark Horse Coffee Roasters",
+				"rating": 4.5,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.darkhorseroasting.com/",
+				"hours": {
+					"monday": ["6:30a", "6:30p"],
+					"tuesday": ["6:30a", "6:30p"],
+					"wednesday": ["6:30a", "6:30p"],
+					"thursday": ["6:30a", "6:30p"],
+					"friday": ["6:30a", "6:30p"],
+					"saturday": ["7:00a", "7:00p"],
+					"sunday": ["7:00a", "7:00p"]
+				}
+			}, 
+			{ "place": "Industrial Grind Coffee",
+				"rating": 4.5,
+				"open": true,
+				"distance": 0.7,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.industrialgrindcoffee.com/",
+				"hours": {
+					"monday": ["7:00a", "6:00p"],
+					"tuesday": ["7:00a", "6:00p"],
+					"wednesday": ["7:00a", "6:00p"],
+					"thursday": ["7:00a", "6:00p"],
+					"friday": ["7:00a", "6:00p"],
+					"saturday": ["8:00a", "1:00p"],
+					"sunday": ["8:00a", "1:00p"]
+				}
 			}
-		},
-		{ "place": "Clairemont Coffee",
-			"rating": 4.5,
-			"open": true,
-			"distance": 0.3,
-			"direction": "southeast",
-			"payment": "true",
-			"site": "http://clairemontcoffee.com/",
-			"hours": {
-				"monday": ["6:00a", "7:00p"],
-				"tuesday": ["6:00a", "7:00p"],
-				"wednesday": ["6:00a", "7:00p"],
-				"thursday": ["6:00a", "7:00p"],
-				"friday": ["6:00a", "7:00p"],
-				"saturday": ["7:00a", "7:00p"],
-				"sunday": ["7:00a", "2:00p"]
+		],
+		[
+			{ "place": "Coffee & Tea Collective",
+				"rating": 4.5,
+				"open": true,
+				"distance": 2.4,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.coffeeandteacollective.com/",
+				"hours": {
+					"monday": ["7:00a", "6:00p"],
+					"tuesday": ["7:00a", "6:00p"],
+					"wednesday": ["7:00a", "6:00p"],
+					"thursday": ["7:00a", "6:00p"],
+					"friday": ["7:00a", "6:00p"],
+					"saturday": ["7:00a", "6:00p"],
+					"sunday": ["7:00a", "6:00p"]
+				}
+			},
+			{ "place": "Industrial Grind Coffee",
+				"rating": 4.5,
+				"open": true,
+				"distance": 0.7,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.industrialgrindcoffee.com/",
+				"hours": {
+					"monday": ["7:00a", "6:00p"],
+					"tuesday": ["7:00a", "6:00p"],
+					"wednesday": ["7:00a", "6:00p"],
+					"thursday": ["7:00a", "6:00p"],
+					"friday": ["7:00a", "6:00p"],
+					"saturday": ["8:00a", "1:00p"],
+					"sunday": ["8:00a", "1:00p"]
+				}
+			},
+			{ "place": "Lestat's Coffee House",
+				"rating": 4,
+				"open": true,
+				"distance": 0.7,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.lestats.com/",
+				"hours": {
+					"monday": ["24h"],
+					"tuesday": ["24h"],
+					"wednesday": ["24h"],
+					"thursday": ["24h"],
+					"friday": ["24h"],
+					"saturday": ["24h"],
+					"sunday": ["24h"]
+				}
+			},
+			{ "place": "Better Buzz Coffee - The Lab",
+				"rating": 4.5,
+				"open": true,
+				"distance": 4.7,
+				"direction": "southwest",
+				"payment": true,
+				"site": "http://www.betterbuzzcoffee.com/",
+				"hours": {
+					"monday": ["6:30a", "7:00p"],
+					"tuesday": ["6:30a", "7:00p"],
+					"wednesday": ["6:30a", "7:00p"],
+					"thursday": ["6:30a", "7:00p"],
+					"friday": ["6:30a", "7:00p"],
+					"saturday": ["6:30a", "7:00p"],
+					"sunday": ["6:30a", "7:00p"]
+				}
 			}
-		},
-		{ "place": "Dark Horse Coffee Roasters",
-			"rating": 4.5,
-			"open": true,
-			"distance": 0.5,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.darkhorseroasting.com/",
-			"hours": {
-				"monday": ["6:30a", "6:30p"],
-				"tuesday": ["6:30a", "6:30p"],
-				"wednesday": ["6:30a", "6:30p"],
-				"thursday": ["6:30a", "6:30p"],
-				"friday": ["6:30a", "6:30p"],
-				"saturday": ["7:00a", "7:00p"],
-				"sunday": ["7:00a", "7:00p"]
+		],
+		[
+			{ "place": "Zumbar Coffee & Tea",
+				"rating": 4.5,
+				"open": true,
+				"distance": 6.7,
+				"direction": "north",
+				"payment": true,
+				"site": "http://www.zumbarcoffee.com/",
+				"hours": {
+					"monday": ["6:00a", "5:00p"],
+					"tuesday": ["6:00a", "5:00p"],
+					"wednesday": ["6:00a", "5:00p"],
+					"thursday": ["6:00a", "5:00p"],
+					"friday": ["6:00a", "5:00p"],
+					"saturday": ["7:30a", "1:30p"],
+					"sunday": ["0h"]
+				}
+			},
+			{ "place": "Mystic Mocha",
+				"rating": 4,
+				"open": true,
+				"distance": 3.7,
+				"direction": "southeast",
+				"payment": true,
+				"site": "http://www.mysticmocha.us/",
+				"hours": {
+					"monday": ["6:00a", "4:00p"],
+					"tuesday": ["6:00a", "4:00p"],
+					"wednesday": ["6:00a", "4:00p"],
+					"thursday": ["6:00a", "4:00p"],
+					"friday": ["6:00a", "4:00p"],
+					"saturday": ["6:30a", "4:00p"],
+					"sunday": ["6:30a", "4:00p"]
+				}
 			}
-		}, 
-		{ "place": "Industrial Grind Coffee",
-			"rating": 4.5,
-			"open": true,
-			"distance": 0.7,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.industrialgrindcoffee.com/",
-			"hours": {
-				"monday": ["7:00a", "6:00p"],
-				"tuesday": ["7:00a", "6:00p"],
-				"wednesday": ["7:00a", "6:00p"],
-				"thursday": ["7:00a", "6:00p"],
-				"friday": ["7:00a", "6:00p"],
-				"saturday": ["8:00a", "1:00p"],
-				"sunday": ["8:00a", "1:00p"]
-			}
-		},
-		{ "place": "Coffee & Tea Collective",
-			"rating": 4.5,
-			"open": true,
-			"distance": 2.4,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.coffeeandteacollective.com/",
-			"hours": {
-				"monday": ["7:00a", "6:00p"],
-				"tuesday": ["7:00a", "6:00p"],
-				"wednesday": ["7:00a", "6:00p"],
-				"thursday": ["7:00a", "6:00p"],
-				"friday": ["7:00a", "6:00p"],
-				"saturday": ["7:00a", "6:00p"],
-				"sunday": ["7:00a", "6:00p"]
-			}
-		},
-		{ "place": "Industrial Grind Coffee",
-			"rating": 4.5,
-			"open": true,
-			"distance": 0.7,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.industrialgrindcoffee.com/",
-			"hours": {
-				"monday": ["7:00a", "6:00p"],
-				"tuesday": ["7:00a", "6:00p"],
-				"wednesday": ["7:00a", "6:00p"],
-				"thursday": ["7:00a", "6:00p"],
-				"friday": ["7:00a", "6:00p"],
-				"saturday": ["8:00a", "1:00p"],
-				"sunday": ["8:00a", "1:00p"]
-			}
-		},
-		{ "place": "Lestat's Coffee House",
-			"rating": 4,
-			"open": true,
-			"distance": 0.7,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.lestats.com/",
-			"hours": {
-				"monday": ["24h"],
-				"tuesday": ["24h"],
-				"wednesday": ["24h"],
-				"thursday": ["24h"],
-				"friday": ["24h"],
-				"saturday": ["24h"],
-				"sunday": ["24h"]
-			}
-		},
-		{ "place": "Better Buzz Coffee - The Lab",
-			"rating": 4.5,
-			"open": true,
-			"distance": 4.7,
-			"direction": "southwest",
-			"payment": true,
-			"site": "http://www.betterbuzzcoffee.com/",
-			"hours": {
-				"monday": ["6:30a", "7:00p"],
-				"tuesday": ["6:30a", "7:00p"],
-				"wednesday": ["6:30a", "7:00p"],
-				"thursday": ["6:30a", "7:00p"],
-				"friday": ["6:30a", "7:00p"],
-				"saturday": ["6:30a", "7:00p"],
-				"sunday": ["6:30a", "7:00p"]
-			}
-		},
-		{ "place": "Zumbar Coffee & Tea",
-			"rating": 4.5,
-			"open": true,
-			"distance": 6.7,
-			"direction": "north",
-			"payment": true,
-			"site": "http://www.zumbarcoffee.com/",
-			"hours": {
-				"monday": ["6:00a", "5:00p"],
-				"tuesday": ["6:00a", "5:00p"],
-				"wednesday": ["6:00a", "5:00p"],
-				"thursday": ["6:00a", "5:00p"],
-				"friday": ["6:00a", "5:00p"],
-				"saturday": ["7:30a", "1:30p"],
-				"sunday": ["0h"]
-			}
-		},
-		{ "place": "Mystic Mocha",
-			"rating": 4,
-			"open": true,
-			"distance": 3.7,
-			"direction": "southeast",
-			"payment": true,
-			"site": "http://www.mysticmocha.us/",
-			"hours": {
-				"monday": ["6:00a", "4:00p"],
-				"tuesday": ["6:00a", "4:00p"],
-				"wednesday": ["6:00a", "4:00p"],
-				"thursday": ["6:00a", "4:00p"],
-				"friday": ["6:00a", "4:00p"],
-				"saturday": ["6:30a", "4:00p"],
-				"sunday": ["6:30a", "4:00p"]
-			}
-		}
+		]
 	]
 }
