@@ -1,28 +1,12 @@
 'use strict';
 
+var cur;
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	
 	// Category page dropdown
-	var cur;
-	$('.place').click(function(e) {
-		var curIcon = $(this).find('.open-down');
-		if (cur && cur.th == this) {
-			if (curIcon.hasClass('icon-uniF48B')) {
-				curIcon.removeClass('icon-uniF48B').addClass('icon-uniF48A');
-			}
-			else if (curIcon.hasClass('icon-uniF48A')) {
-				curIcon.removeClass('icon-uniF48A').addClass('icon-uniF48B');
-			}
-			cur.slideToggle();
-		}
-		else {
-			cur = $(this).children('.more-info');
-			cur.th = this;
-			cur.slideDown();
-			curIcon.removeClass('icon-uniF48B').addClass('icon-uniF48A');
-		}
-	});
+	$('.place').click(placeClick);
 
 	$('.adp').css('color', '#ababab');
 	$('.adp-table').css('color', '#ababab');
@@ -45,6 +29,7 @@ $(document).ready(function() {
 				data[i].index = num*4 + i;
 				var html = template(data[i]);
 				$('#places').append(html);
+				$('.place').last().on('click', placeClick);
 			}
 			if (!data[0].hasNext) {
 				$('.more').hide();
@@ -54,3 +39,22 @@ $(document).ready(function() {
 	});
 
 });
+
+function placeClick(e) {
+	var curIcon = $(this).find('.open-down');
+	if (cur && cur.th == this) {
+		if (curIcon.hasClass('icon-uniF48B')) {
+			curIcon.removeClass('icon-uniF48B').addClass('icon-uniF48A');
+		}
+		else if (curIcon.hasClass('icon-uniF48A')) {
+			curIcon.removeClass('icon-uniF48A').addClass('icon-uniF48B');
+		}
+		cur.slideToggle();
+	}
+	else {
+		cur = $(this).children('.more-info');
+		cur.th = this;
+		cur.slideDown();
+		curIcon.removeClass('icon-uniF48B').addClass('icon-uniF48A');
+	}
+}
