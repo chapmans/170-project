@@ -1,10 +1,10 @@
 {{> header}}
 
-		<h1 class="p-category"><span class="p-cat-icon {{icon}}"></span> {{category}}</h1>
+		<h1 class="p-category"><span class="p-cat-icon {{icon}}"></span> <span class="cat-name">{{category}}</span></h1>
 
 		<div class="row">
 			<ul id="places">
-			{{#each places}}
+			{{#each places.[0]}}
 				<li class="place">
 					<div class="name">
 						<a class="next" href="/places/{{../category}}/{{@index}}">GO</a>
@@ -27,6 +27,9 @@
 				</li>
 			{{/each}}
 		</ul>
+		<div class="more">
+			<a href="#">more</a>
+		</div>
 		</div>
 	</div>
 
