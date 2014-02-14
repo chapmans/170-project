@@ -15,7 +15,7 @@ function init() {
 		}
 
 		if(window.setDirections === true) {
-			window.directionsDisplay.setPanel(document.getElementById('directions_panel'));
+			//window.directionsDisplay.setPanel(document.getElementById('directions_panel'));
 		}
 
 		navigator.geolocation.getCurrentPosition(renderDisplay, handleNoGeolocation, {}); 
@@ -35,6 +35,10 @@ function renderDisplay(pos) {
 
 	var directionsService = new google.maps.DirectionsService();
 	directionsService.route(request, function(response, status) {
+		if (status == google.maps.DirectionsStatus.OK) {
+			window.directionsDisplay.setDirections(response);
+ 		}
+
 		var route = response.routes[0].legs[0];
 
 		var appendString = '<h4>Start from: ' + route.start_address + '</h4><ol>';
