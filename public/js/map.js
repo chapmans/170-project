@@ -4,19 +4,19 @@ function handleNoGeolocation() {
 
 function init() {
 	if(navigator.geolocation) {
-		window.directionsDisplay = new google.maps.DirectionsRenderer();
+		window.renderer = new google.maps.DirectionsRenderer();
 
 		if(window.setMap === true) {
 			window.map = new google.maps.Map(document.getElementById('map_panel'), {
 				zoom: 7,
 				content: "Location found using HTML5."
 			});
-			window.directionsDisplay.setMap(map);
+			window.renderer.setMap(map);
 		}
 
-		if(window.setDirections === true) {
-			//window.directionsDisplay.setPanel(document.getElementById('directions_panel'));
-		}
+		//if(window.setDirections === true) {
+			//window.renderer.setPanel(document.getElementById('directions_panel'));
+		//}
 
 		navigator.geolocation.getCurrentPosition(renderDisplay, handleNoGeolocation, {}); 
 	} else {
@@ -36,7 +36,7 @@ function renderDisplay(pos) {
 	var directionsService = new google.maps.DirectionsService();
 	directionsService.route(request, function(response, status) {
 		if (status == google.maps.DirectionsStatus.OK) {
-			window.directionsDisplay.setDirections(response);
+			window.renderer.setDirections(response);
  		}
 
 		var route = response.routes[0].legs[0];
@@ -51,5 +51,5 @@ function renderDisplay(pos) {
 	});
 
 	window.setMap = false;
-	window.setDirections = false;
+	//window.setDirections = false;
 }
