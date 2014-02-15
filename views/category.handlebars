@@ -10,8 +10,10 @@
 						<a class="next" href="/places/{{../category}}/{{@index}}">GO</a>
 						<a class="open-down icon-uniF48B"></a>
 						<div class="title">{{place}}</div>
-						<div class="info" id="info-{{place}}">
-							<script>setDistanceTo("{{address}}", "info-{{place}}");</script>
+						<div class="info" id="info-{{uid}}">
+							<script>
+								setDistanceTo("{{address}}", "info-{{uid}}");
+							</script>
 						</div>
 					</div>
 					<div class="more-info">

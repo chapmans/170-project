@@ -4,6 +4,7 @@
 	"places": [
 		[
 			{ "place": "Chocolat",
+				"uid": "Chocolat",
 				"address": "3896 5th Ave, San Diego, CA 92103",
 				"rating": 4.5,
 				"open": false,
@@ -22,6 +23,7 @@
 				}
 			},
 			{ "place": "Babycakes",
+				"uid": "Babycakes",
 				"address": "3766 5th Ave, San Diego, CA 92103",
 				"rating": 4.5,
 				"open": true,
@@ -40,6 +42,7 @@
 				}
 			},
 			{ "place": "D Bar San Diego",
+				"uid": "D_Bar_San_Diego",
 				"address": "3930 5th Ave, San Diego, CA 92103",
 				"rating": 4.5,
 				"open": true,
@@ -58,6 +61,7 @@
 				}
 			}, 
 			{ "place": "Extraordinary Desserts",
+				"uid": "Extraordinary_Desserts",
 				"address": "1430 Union St, San Diego, CA 92101",
 				"rating": 4.5,
 				"open": true,
@@ -78,6 +82,7 @@
 		], 
 		[
 			{ "place": "Heaven Sent Desserts",
+				"place": "Heaven_Sent_Desserts",
 				"address": "3001 University Ave, San Diego, CA 92104",
 				"rating": 3.5,
 				"open": false,
@@ -96,6 +101,7 @@
 				}
 			},
 			{ "place": "Pappalecco",
+				"uid": "Pappalecco",
 				"address": "1602 State St, San Diego, CA 92101",
 				"rating": 4.5,
 				"open": true,
@@ -114,6 +120,7 @@
 				}
 			},
 			{ "place": "Up2you Cafe",
+				"place": "Up2you_Cafe",
 				"address": "7770 Vickers St, San Diego, CA 92111",
 				"rating": 3.5,
 				"open": true,
@@ -132,6 +139,7 @@
 				}
 			}, 
 			{ "place": "Cafe Hue",
+				"uid": "Cafe_Hue",
 				"address": "3860 Convoy St, San Diego, CA 92111",
 				"rating": 3.5,
 				"open": true,

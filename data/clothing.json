@@ -4,6 +4,7 @@
 	"places": [
 		[
 			{ "place": "Thrift Trader",
+				"uid": "thrift_trader",
 				"address": "3939 Iowa St, San Diego, CA 92104",
 				"rating": 4,
 				"open": false,
@@ -22,6 +23,7 @@
 				}
 			},
 			{ "place": "City Digz",
+				"uid": "city_digz",
 				"address": "1550 Market St, San Diego, CA 92101",
 				"rating": 4,
 				"open": true,
@@ -39,6 +41,7 @@
 				}
 			},
 			{ "place": "Urban Renewal",
+				"uid": "urban_renewal",
 				"address": "3773 30th St, San Diego, CA 92104",
 				"rating": 4.5,
 				"open": true,

@@ -4,6 +4,7 @@
 	"places": [
 		[
 			{ "place": "Bird Rock Coffee Roasters",
+				"uid": "Bird_Rock_Coffee_Roasters",
 				"address": "5627 La Jolla Blvd, La Jolla, CA 92037",
 				"rating": 4.5,
 				"open": false,
@@ -22,6 +23,7 @@
 				}
 			},
 			{ "place": "Clairemont Coffee",
+				"uid": "Clairemont_Coffee",
 				"address": "3095 Clairemont Dr, San Diego, CA 92117",
 				"rating": 4.5,
 				"open": true,
@@ -40,6 +42,7 @@
 				}
 			},
 			{ "place": "Dark Horse Coffee Roasters",
+				"uid": "Dark_Horse_Coffee_Roasters",
 				"address": "3260 Adams Ave, San Diego, CA 92116",
 				"rating": 4.5,
 				"open": true,
@@ -58,6 +61,7 @@
 				}
 			}, 
 			{ "place": "Industrial Grind Coffee",
+				"uid": "Industrial_Grind_Coffee",
 				"address": "3922 1/2 Park Blvd, San Diego, CA 92103",
 				"rating": 4.5,
 				"open": true,
@@ -77,7 +81,8 @@
 			}
 		],
 		[
-			{ "place": "Coffee & Tea Collective",
+			{ "place": "Coffee and Tea Collective",
+				"uid": "Coffee_and_Tea_Collective",
 				"address": "2911 El Cajon Blvd, San Diego, CA 92104",
 				"rating": 4.5,
 				"open": true,
@@ -96,6 +101,7 @@
 				}
 			},
 			{ "place": "Roast Coach",
+				"uid": "Roast_Coach",
 				"address": "3382 30th St, San Diego, CA 92104",
 				"rating": 4.5,
 				"open": true,
@@ -114,6 +120,7 @@
 				}
 			},
 			{ "place": "Lestat's Coffee House",
+				"uid": "Lestats_Coffee_House",
 				"address": "3343 Adams Ave, San Diego, CA 92116",
 				"rating": 4,
 				"open": true,
@@ -132,6 +139,7 @@
 				}
 			},
 			{ "place": "Better Buzz Coffee - The Lab",
+				"uid": "Better_Buzz_Coffee_The_Lab",
 				"address": "3745 Mission Blvd, San Diego, CA 92109",
 				"rating": 4.5,
 				"open": true,
@@ -152,6 +160,7 @@
 		],
 		[
 			{ "place": "Zumbar Coffee & Tea",
+				"uid": "Zumbar_Coffee_Tea",
 				"address": "10920 Roselle St, San Diego, CA 92121",
 				"rating": 4.5,
 				"open": true,
@@ -170,6 +179,7 @@
 				}
 			},
 			{ "place": "Mystic Mocha",
+				"uid": "Mystic_Mocha",
 				"address": "2105 Mission Ave, San Diego, CA 92116",
 				"rating": 4,
 				"open": true,

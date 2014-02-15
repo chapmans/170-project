@@ -4,6 +4,7 @@
 	"places": [
 		[
 			{ "place": "Phil's BBQ",
+				"uid": "Phil_s_BBQ",
 				"address": "3750 Sports Arena Blvd, San Diego, CA 92110",
 				"rating": 4.5,
 				"open": false,
@@ -22,6 +23,7 @@
 				}
 			},
 			{ "place": "Carnitas' Snack Shack",
+				"uid": "Carnitas_Snack_Shack",
 				"address": "2632 University Ave, San Diego, CA 92104",
 				"rating": 4.5,
 				"open": true,
@@ -40,6 +42,7 @@
 				}
 			},
 			{ "place": "Punjabi Tandoor",
+				"uid": "Punjabi_Tandoor",
 				"address": "9235 Activity Rd, San Diego, CA 92126",
 				"rating": 4.5,
 				"open": true,
@@ -58,6 +61,7 @@
 				}
 			}, 
 			{ "place": "Cucina Urbana",
+				"uid": "Cucina_Urbana",
 				"address": "505 Laurel St, San Diego, CA 92101",
 				"rating": 4.5,
 				"open": true,

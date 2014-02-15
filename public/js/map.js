@@ -2,6 +2,10 @@
 // Functions used in other files
 // --------------------------------------------------------
 
+//function removeInvalidChars(str) {
+	//return str.replace(/\W/g, '');
+//}
+
 function setDisplayTo(destination, elementId) {
 	getGeolocation(function(pos) {
 		renderDisplay(destination, elementId, pos);
@@ -59,7 +63,6 @@ function renderDisplay(destination, elementId, pos) {
 	});
 	renderer.setMap(map);
 
-	//var currentLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
 	var request = {
 		origin: getCurrentLocation(pos), 
 		destination: destination,
