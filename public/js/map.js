@@ -1,3 +1,23 @@
+// --------------------------------------------------------
+// Functions used in other files
+// --------------------------------------------------------
+
+function setDisplayTo(destination, elementId) {
+	getGeolocation(function(pos) {
+		renderDisplay(destination, elementId, pos);
+	});
+}
+
+function setDistanceTo(destination, elementId) {
+	getGeolocation(function(response) {
+	    setDistanceToHelper(destination, elementId, response);
+	});
+}
+
+// --------------------------------------------------------
+// Helper functions
+// --------------------------------------------------------
+
 function handleNoGeolocation() {
 	alert('Your browser does not support geolocation.')
 }
@@ -7,12 +27,6 @@ function getGeolocation(callback) {
 		navigator.geolocation.getCurrentPosition(callback, handleNoGeolocation, {}); 
 	else
 		handleNoGeolocation();
-}
-
-function init(destination) {
-	getGeolocation(function(pos) {
-		renderDisplay(destination, pos);
-	});
 }
 
 function getCurrentLocation(pos) {
@@ -35,15 +49,11 @@ function setDistanceToHelper(end, elementId, pos) {
 	});
 }
 
-function setDistanceTo(destination, elementId) {
-	getGeolocation(function(response) {
-	    setDistanceToHelper(destination, elementId, response);
-	});
-}
 
-function renderDisplay(destination, pos) {
+
+function renderDisplay(destination, elementId, pos) {
 	renderer = new google.maps.DirectionsRenderer();
-	map = new google.maps.Map(document.getElementById('map_panel'), {
+	map = new google.maps.Map(document.getElementById(elementId), {
 		zoom: 7,
 		content: "Location found using HTML5."
 	});
