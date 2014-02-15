@@ -3,9 +3,11 @@
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 	<script src="/js/map.js"></script>
 
-	<script type="text/javascript">
-		window.setMap = true;
-		//window.setDirections = true;
+	<p id="place-address" hidden>
+		{{address}}
+	</p>
+
+	<script>
 		google.maps.event.addDomListener(window, 'load', init);
 	</script>
 

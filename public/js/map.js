@@ -5,18 +5,11 @@ function handleNoGeolocation() {
 function init() {
 	if(navigator.geolocation) {
 		window.renderer = new google.maps.DirectionsRenderer();
-
-		if(window.setMap === true) {
-			window.map = new google.maps.Map(document.getElementById('map_panel'), {
-				zoom: 7,
-				content: "Location found using HTML5."
-			});
-			window.renderer.setMap(map);
-		}
-
-		//if(window.setDirections === true) {
-			//window.renderer.setPanel(document.getElementById('directions_panel'));
-		//}
+		window.map = new google.maps.Map(document.getElementById('map_panel'), {
+			zoom: 7,
+			content: "Location found using HTML5."
+		});
+		window.renderer.setMap(map);
 
 		navigator.geolocation.getCurrentPosition(renderDisplay, handleNoGeolocation, {}); 
 	} else {
@@ -26,7 +19,7 @@ function init() {
 
 function renderDisplay(pos) {
 	var currentLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-	var destination = "8657 Villa La Jolla Dr, La Jolla, CA 92037"; // TODO make it a param... how? since js script can't access {{}} params
+	var destination = document.getElementById("place-address").innerText;
 	var request = {
 		origin: currentLocation, 
 		destination: destination,
@@ -49,7 +42,4 @@ function renderDisplay(pos) {
 
 		$('#directions').append(appendString);
 	});
-
-	window.setMap = false;
-	//window.setDirections = false;
 }

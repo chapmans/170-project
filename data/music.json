@@ -4,6 +4,7 @@
 	"places": [
 		[
 			{ "place": "M-Theory Music",
+				"address": "915 W Washington St, San Diego, CA 92103",
 				"rating": 4.5,
 				"open": false,
 				"distance": 2.3,
@@ -21,6 +22,7 @@
 				}
 			},
 			{ "place": "Record City",
+				"address": "3757 6th Ave, San Diego, CA 92103",
 				"rating": 4.5,
 				"open": true,
 				"distance": 0.5,
@@ -38,6 +40,7 @@
 				}
 			},
 			{ "place": "Off the Record",
+				"address": "2912 University Ave, San Diego, CA 92104",
 				"rating": 3,
 				"open": true,
 				"distance": 0.5,
@@ -55,6 +58,7 @@
 				}
 			}, 
 			{ "place": "Nickelodeon Records",
+				"address": "3335 Adams Ave, San Diego, CA 92116",
 				"rating": 4,
 				"open": true,
 				"distance": 3.2,

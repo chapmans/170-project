@@ -4,6 +4,7 @@
 	"places": [
 		[
 			{ "place": "Bird Rock Coffee Roasters",
+				"address": "5627 La Jolla Blvd, La Jolla, CA 92037",
 				"rating": 4.5,
 				"open": false,
 				"distance": 0.2,
@@ -21,6 +22,7 @@
 				}
 			},
 			{ "place": "Clairemont Coffee",
+				"address": "3095 Clairemont Dr, San Diego, CA 92117",
 				"rating": 4.5,
 				"open": true,
 				"distance": 0.3,
@@ -38,6 +40,7 @@
 				}
 			},
 			{ "place": "Dark Horse Coffee Roasters",
+				"address": "3260 Adams Ave, San Diego, CA 92116",
 				"rating": 4.5,
 				"open": true,
 				"distance": 0.5,
@@ -55,6 +58,7 @@
 				}
 			}, 
 			{ "place": "Industrial Grind Coffee",
+				"address": "3922 1/2 Park Blvd, San Diego, CA 92103",
 				"rating": 4.5,
 				"open": true,
 				"distance": 0.7,
@@ -74,6 +78,7 @@
 		],
 		[
 			{ "place": "Coffee & Tea Collective",
+				"address": "2911 El Cajon Blvd, San Diego, CA 92104",
 				"rating": 4.5,
 				"open": true,
 				"distance": 2.4,
@@ -91,6 +96,7 @@
 				}
 			},
 			{ "place": "Roast Coach",
+				"address": "3382 30th St, San Diego, CA 92104",
 				"rating": 4.5,
 				"open": true,
 				"distance": 0.7,
@@ -108,6 +114,7 @@
 				}
 			},
 			{ "place": "Lestat's Coffee House",
+				"address": "3343 Adams Ave, San Diego, CA 92116",
 				"rating": 4,
 				"open": true,
 				"distance": 0.7,
@@ -125,6 +132,7 @@
 				}
 			},
 			{ "place": "Better Buzz Coffee - The Lab",
+				"address": "3745 Mission Blvd, San Diego, CA 92109",
 				"rating": 4.5,
 				"open": true,
 				"distance": 4.7,
@@ -144,6 +152,7 @@
 		],
 		[
 			{ "place": "Zumbar Coffee & Tea",
+				"address": "10920 Roselle St, San Diego, CA 92121",
 				"rating": 4.5,
 				"open": true,
 				"distance": 6.7,
@@ -161,6 +170,7 @@
 				}
 			},
 			{ "place": "Mystic Mocha",
+				"address": "2105 Mission Ave, San Diego, CA 92116",
 				"rating": 4,
 				"open": true,
 				"distance": 3.7,

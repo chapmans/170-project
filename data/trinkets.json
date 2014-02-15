@@ -4,6 +4,7 @@
 	"places": [
 		[
 			{ "place": "Make Good",
+				"address": "2207 Fern St, San Diego, CA 92104",
 				"rating": 5,
 				"open": true,
 				"distance": 0.5,
@@ -21,6 +22,7 @@
 				}
 			}, 
 			{ "place": "The Black Bead",
+				"address": "2207 Fern St, San Diego, CA 92104",
 				"rating": 4.5,
 				"open": false,
 				"distance": 2.3,
@@ -38,6 +40,7 @@
 				}
 			},
 			{ "place": "TimeWise Jewelers",
+				"address": "5643 Balboa Ave, San Diego, CA 92111",
 				"rating": 4.5,
 				"open": true,
 				"distance": 0.5,
@@ -55,6 +58,7 @@
 				}
 			},
 			{ "place": "Noon Designs",
+				"address": "4993 Niagara Ave, San Diego, CA 92107",
 				"rating": 5,
 				"open": true,
 				"distance": 3.2,
