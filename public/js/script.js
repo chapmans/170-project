@@ -4,6 +4,9 @@ var cur;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
+
+	//$.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true');
+	//$.getScript('/js/map.js');
 	
 	// Category page dropdown
 	$('.place').click(placeClick);
@@ -15,7 +18,8 @@ $(document).ready(function() {
 	// Load more
 	var category = $('.cat-name').text();
 	var num = 1;
-	var source   = '<li class="place"><div class="name"><a class="next" href="/places/{{category}}/{{index}}">GO</a><a class="open-down icon-uniF48B"></a><div class="title">{{place}}</div><div class="info">{{direction}} {{distance}} mi</div></div><div class="more-info"><div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div><div class="hours">Today\'s hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div><div class="site"><a href="{{site}}">{{site}}</a></div><div class="payment">{{#if payment}}Accepts credit cards{{else}}Cash only{{/if}}</div></div></li>';
+	//var source   = '<li class="place"><div class="name"><a class="next" href="/places/{{category}}/{{index}}">GO</a><a class="open-down icon-uniF48B"></a><div class="title">{{place}}</div><div class="info">{{direction}} {{distance}} mi</div></div><div class="more-info"><div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div><div class="hours">Today\'s hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div><div class="site"><a href="{{site}}">{{site}}</a></div><div class="payment">{{#if payment}}Accepts credit cards{{else}}Cash only{{/if}}</div></div></li>';
+	var source   = '<li class="place"><div class="name"><a class="next" href="/places/{{category}}/{{index}}">GO</a><a class="open-down icon-uniF48B"></a><div class="title">{{place}}</div><div class="info" id="info-{{place}}"><script>setDistanceTo("{{address}}", "info-{{place}}");</script></div></div><div class="more-info"><div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div><div class="hours">Today\'s hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div><div class="site"><a href="{{site}}">{{site}}</a></div><div class="payment">{{#if payment}}Accepts credit cards{{else}}Cash only{{/if}}</div></div></li>';
 	var template = Handlebars.compile(source);
 
 	if ($('.is-multipage').text() == false) $('.more').hide();
