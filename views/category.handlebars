@@ -1,5 +1,8 @@
 {{> header}}
 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+<script src="/js/map.js"></script>
+
 		<h1 class="p-category"><span class="p-cat-icon {{icon}}"></span> <span class="cat-name">{{category}}</span></h1>
 		<span class="is-multipage" style="display:none">{{multipage}}</span>
 		<div class="row">
@@ -10,7 +13,12 @@
 						<a class="next" href="/places/{{../category}}/{{@index}}">GO</a>
 						<a class="open-down icon-uniF48B"></a>
 						<div class="title">{{place}}</div>
-						<div class="info">{{direction}} {{distance}} mi</div>
+
+						<div class="info" id="info-{{place}}">
+							<script>
+								setDistanceTo("{{address}}", "info-{{place}}");
+							</script>
+						</div>
 					</div>
 					<div class="more-info">
 						<div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div>
