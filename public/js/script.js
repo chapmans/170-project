@@ -4,10 +4,6 @@ var cur;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-
-	//$.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true');
-	//$.getScript('/js/map.js');
-	
 	// Category page dropdown
 	$('.place').click(placeClick);
 
