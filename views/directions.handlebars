@@ -3,12 +3,11 @@
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 	<script src="/js/map.js"></script>
 
-	<p id="place-address" hidden>
-		{{address}}
-	</p>
-
 	<script>
-		google.maps.event.addDomListener(window, 'load', init);
+		var callback = function() {
+			init("{{address}}");
+		};
+		google.maps.event.addDomListener(window, 'load', callback);
 	</script>
 
 	<div id="place-info" class="row">

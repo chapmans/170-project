@@ -9,8 +9,10 @@ function getGeolocation(callback) {
 		handleNoGeolocation();
 }
 
-function init() {
-	getGeolocation(renderDisplay);
+function init(destination) {
+	getGeolocation(function(pos) {
+		renderDisplay(destination, pos);
+	});
 }
 
 function getCurrentLocation(pos) {
@@ -39,7 +41,7 @@ function setDistanceTo(destination, elementId) {
 	});
 }
 
-function renderDisplay(pos) {
+function renderDisplay(destination, pos) {
 	renderer = new google.maps.DirectionsRenderer();
 	map = new google.maps.Map(document.getElementById('map_panel'), {
 		zoom: 7,
@@ -48,7 +50,6 @@ function renderDisplay(pos) {
 	renderer.setMap(map);
 
 	//var currentLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-	var destination = document.getElementById("place-address").innerText;
 	var request = {
 		origin: getCurrentLocation(pos), 
 		destination: destination,
