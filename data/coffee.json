@@ -30,7 +30,7 @@
 				"distance": 0.2,
 				"direction": "south",
 				"payment": true,
-				"site": "www.birdrockcoffeeroasters.com",
+				"site": "birdrockcoffeeroasters.com",
 				"hours": {
 					"monday": ["6:00a", "6:00p"],
 					"tuesday": ["6:00a", "6:00p"],
@@ -68,7 +68,7 @@
 				"distance": 0.5,
 				"direction": "southeast",
 				"payment": true,
-				"site": "www.darkhorseroasting.com",
+				"site": "darkhorseroasting.com",
 				"hours": {
 					"monday": ["6:30a", "6:30p"],
 					"tuesday": ["6:30a", "6:30p"],
