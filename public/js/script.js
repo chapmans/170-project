@@ -5,7 +5,7 @@ var cur;
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	// Category page dropdown
-	$('.place').click(placeClick);
+	$('.place .name').click(placeClick);
 
 	$('.adp').css('color', '#ababab');
 	$('.adp-table').css('color', '#ababab');
@@ -14,7 +14,7 @@ $(document).ready(function() {
 	// Load more
 	var category = $('.cat-name').text();
 	var num = 1;
-	var source   = '<li class="place"><div class="name"><a class="next" href="/places/{{category}}/{{index}}">GO</a>' +
+	var source   = '<li class="place"><a class="next" href="/places/{{category}}/{{index}}">GO</a><div class="name">' +
 									'<a class="open-down icon-uniF48B"></a><div class="title">{{place}}</div><div class="info">' +
 									'{{direction}} {{distance}} mi</div></div><div class="more-info"><div class="rating">{{rating}}</div>' +
 									'<div class="hours">Today\'s hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div><div class="site">' +
@@ -34,7 +34,7 @@ $(document).ready(function() {
 				data[i].index = num*4 + i;
 				var html = template(data[i]);
 				$('#places').append(html);
-				$('.place').last().on('click', placeClick);
+				$('.place .name').last().on('click', placeClick);
 				$('.place').last().find('.rating').each(function() {
 					var rating = Number($(this).text());
 					var stars = "";
@@ -81,7 +81,7 @@ function placeClick(e) {
 		cur.slideToggle();
 	}
 	else {
-		cur = $(this).children('.more-info');
+		cur = $(this).siblings('.more-info');
 		cur.th = this;
 		cur.slideDown();
 		curIcon.removeClass('icon-uniF48B').addClass('icon-uniF48A');
