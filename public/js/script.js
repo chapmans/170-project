@@ -81,7 +81,7 @@ function placeClick(e) {
 		cur.slideToggle();
 	}
 	else {
-		cur = $(this).children('.more-info');
+		cur = $(this).siblings('.more-info');
 		cur.th = this;
 		cur.slideDown();
 		curIcon.removeClass('icon-uniF48B').addClass('icon-uniF48A');
