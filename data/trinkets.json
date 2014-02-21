@@ -97,7 +97,9 @@
 					"saturday": ["10:30a", "7:00p"],
 					"sunday": ["11:00p", "6:00p"]
 				}
-			},
+			}
+		],
+		[
 			{ "place": "Masquerade",
 				"uid": "masquerade",
 				"address": "1608 India St, Ste 105, San Diego, CA 92101",

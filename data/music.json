@@ -79,25 +79,6 @@
 					"sunday": ["12:00p", "4:00p"]
 				}
 			},
-			{ "place": "Bertrand's Music",
-				"uid": "bertrand_music",
-				"address": "13179 Black Mountain Rd, Ste 5, San Diego, CA 92129",
-				"rating": 4,
-				"open": true,
-				"distance": 2.9,
-				"direction": "north",
-				"payment": true,
-				"site": "bertrandmusic.com",
-				"hours": {
-					"monday": ["10:00a", "7:00p"],
-					"tuesday": ["10:00a", "7:00p"],
-					"wednesday": ["10:00a", "7:00p"],
-					"thursday": ["10:00a", "7:00p"],
-					"friday": ["10:00a", "7:00p"],
-					"saturday": ["10:00a", "5:00p"],
-					"sunday": ["12:00p", "4:00p"]
-				}
-			},
 			{ "place": "Apex Music Company",
 				"uid": "apex_music_company",
 				"address": "6210 El Cajon Blvd, San Diego, CA 92115",
@@ -116,7 +97,9 @@
 					"saturday": ["10:00a", "6:00p"],
 					"sunday": ["12:00p", "6:00p"]
 				}
-			},
+			}
+		],
+		[
 			{ "place": "Music Power",
 				"uid": "music_power",
 				"address": "7120 Clairemont Mesa Blvd, San Diego, CA 92111",

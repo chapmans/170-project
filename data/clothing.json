@@ -97,7 +97,9 @@
 					"saturday": ["11:00a", "5:00p"],
 					"sunday": ["11:00a", "5:00p"]
 				}
-			},
+			}
+		],
+		[
 			{ "place": "Bubbles...a Unique Boutique",
 				"uid": "bubbles_a_unique_boutique",
 				"address": "226 5th Ave, San Diego, CA 92101",

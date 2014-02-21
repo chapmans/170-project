@@ -78,9 +78,7 @@
 					"saturday": ["8:00a", "1:00p"],
 					"sunday": ["8:00a", "1:00p"]
 				}
-			}
-		], 
-		[
+			},
 			{ "place": "Heaven Sent Desserts",
 				"uid": "Heaven_Sent_Desserts",
 				"address": "3001 University Ave, San Diego, CA 92104",
@@ -99,7 +97,9 @@
 					"saturday": ["11:00a", "12:00a"],
 					"sunday": ["11:00a", "10:00p"]
 				}
-			},
+			}
+		], 
+		[
 			{ "place": "Pappalecco",
 				"uid": "Pappalecco",
 				"address": "1602 State St, San Diego, CA 92101",
