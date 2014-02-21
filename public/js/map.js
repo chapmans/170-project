@@ -66,6 +66,7 @@ function setDirectionAndDistanceToHelper(end, elementId, pos) {
 	var directionsService = new google.maps.DirectionsService();
 	directionsService.route(request, function(response, status) {
 		var element = document.getElementById(elementId);
+		console.log(response);
 		var distance = response.routes[0].legs[0].distance.text;
 		var start_location = response.routes[0].legs[0].start_location;
 		var end_location = response.routes[0].legs[0].end_location;

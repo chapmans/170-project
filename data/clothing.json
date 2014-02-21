@@ -3,7 +3,7 @@
 	"icon": "icon-uniF53C",
 	"places": [
 		[
-			{ "place": "HOME: A Mercantile Company",
+			{ "place": "HOME - A Mercantile Company",
 				"uid": "home_a_mercantile_company",
 				"address": "3013 University Ave, San Diego, CA 92104",
 				"rating": 4.5,
@@ -41,25 +41,6 @@
 					"sunday": ["12:00p", "6:00p"]
 				}
 			},
-			{ "place": "The Fresh Yard",
-				"uid": "the_fresh_yard",
-				"address": "3773 30th St, Ste A, San Diego, CA 92104",
-				"rating": 4.5,
-				"open": true,
-				"distance": 0.3,
-				"direction": "west",
-				"payment": true,
-				"site": "thefreshyard.com",
-				"hours": {
-					"monday": ["11:00a", "7:30p"],
-					"tuesday": ["11:00a", "7:30p"],
-					"wednesday": ["11:00a", "7:30p"],
-					"thursday": ["11:00a", "7:30p"],
-					"friday": ["11:00a", "7:30p"],
-					"saturday": ["11:00a", "7:30p"],
-					"sunday": ["12:00p", "5:00p"]
-				}
-			},
 			{ "place": "G-Star Raw Store San Diego",
 				"uid": "g_star_raw_store_san_diego",
 				"address": "470 5th Ave, San Diego, CA 92101",
@@ -77,6 +58,24 @@
 					"friday": ["11:00a", "8:00p"],
 					"saturday": ["11:00a", "8:00p"],
 					"sunday": ["11:00a", "7:00p"]
+				}
+			},
+			{ "place": "City Digz",
+				"uid": "city_digz",
+				"address": "1550 Market St, San Diego, CA 92101",
+				"rating": 4,
+				"open": true,
+				"distance": 0.5,
+				"direction": "southeast",
+				"payment": "true",
+				"hours": {
+					"monday": ["10:00a", "6:00p"],
+					"tuesday": ["10:00a", "6:00p"],
+					"wednesday": ["10:00a", "6:00p"],
+					"thursday": ["10:00a", "6:00p"],
+					"friday": ["10:00a", "6:00p"],
+					"saturday": ["10:00a", "6:00p"],
+					"sunday": ["10:00a", "6:00p"]
 				}
 			},
 			{ "place": "Vocabulary",
@@ -127,7 +126,6 @@
 				"distance": 0.37,
 				"direction": "northwest",
 				"payment": true,
-				"site": "no website",
 				"hours": {
 					"monday": ["12:00p", "6:00p"],
 					"tuesday": ["12:00p", "6:00p"],
@@ -146,7 +144,7 @@
 				"distance": 0.3,
 				"direction": "south",
 				"payment": true,
-				"site": "http://www.thrifttrader.org/",
+				"site": "thrifttrader.org",
 				"hours": {
 					"monday": ["10:00a", "7:00p"],
 					"tuesday": ["10:00a", "7:00p"],
@@ -154,24 +152,6 @@
 					"thursday": ["10:00a", "7:00p"],
 					"friday": ["10:00a", "7:00p"],
 					"saturday": ["10:30a", "7:00p"],
-					"sunday": ["10:00a", "6:00p"]
-				}
-			},
-			{ "place": "City Digz",
-				"uid": "city_digz",
-				"address": "1550 Market St, San Diego, CA 92101",
-				"rating": 4,
-				"open": true,
-				"distance": 0.5,
-				"direction": "southeast",
-				"payment": "true",
-				"hours": {
-					"monday": ["10:00a", "6:00p"],
-					"tuesday": ["10:00a", "6:00p"],
-					"wednesday": ["10:00a", "6:00p"],
-					"thursday": ["10:00a", "6:00p"],
-					"friday": ["10:00a", "6:00p"],
-					"saturday": ["10:00a", "6:00p"],
 					"sunday": ["10:00a", "6:00p"]
 				}
 			},

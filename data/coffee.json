@@ -30,7 +30,7 @@
 				"distance": 0.2,
 				"direction": "south",
 				"payment": true,
-				"site": "http://www.birdrockcoffeeroasters.com/",
+				"site": "www.birdrockcoffeeroasters.com",
 				"hours": {
 					"monday": ["6:00a", "6:00p"],
 					"tuesday": ["6:00a", "6:00p"],
@@ -49,7 +49,7 @@
 				"distance": 0.3,
 				"direction": "southeast",
 				"payment": "true",
-				"site": "http://clairemontcoffee.com/",
+				"site": "clairemontcoffee.com",
 				"hours": {
 					"monday": ["6:00a", "7:00p"],
 					"tuesday": ["6:00a", "7:00p"],
@@ -68,7 +68,7 @@
 				"distance": 0.5,
 				"direction": "southeast",
 				"payment": true,
-				"site": "http://www.darkhorseroasting.com/",
+				"site": "www.darkhorseroasting.com",
 				"hours": {
 					"monday": ["6:30a", "6:30p"],
 					"tuesday": ["6:30a", "6:30p"],
@@ -87,7 +87,7 @@
 				"distance": 0.7,
 				"direction": "southeast",
 				"payment": true,
-				"site": "http://www.industrialgrindcoffee.com/",
+				"site": "industrialgrindcoffee.com",
 				"hours": {
 					"monday": ["7:00a", "6:00p"],
 					"tuesday": ["7:00a", "6:00p"],
@@ -100,7 +100,7 @@
 			}
 		],
 		[
-			{ "place": "Coffee and Tea Collective",
+			{ "place": "Coffee & Tea Collective",
 				"uid": "Coffee_and_Tea_Collective",
 				"address": "2911 El Cajon Blvd, San Diego, CA 92104",
 				"rating": 4.5,
@@ -108,7 +108,7 @@
 				"distance": 2.4,
 				"direction": "southeast",
 				"payment": true,
-				"site": "http://www.coffeeandteacollective.com/",
+				"site": "coffeeandteacollective.com",
 				"hours": {
 					"monday": ["7:00a", "6:00p"],
 					"tuesday": ["7:00a", "6:00p"],
@@ -127,7 +127,7 @@
 				"distance": 0.7,
 				"direction": "southeast",
 				"payment": true,
-				"site": "http://roastcoach.com/",
+				"site": "roastcoach.com",
 				"hours": {
 					"monday": ["7:00a", "1:00p"],
 					"tuesday": ["7:00a", "1:00p"],
@@ -146,7 +146,7 @@
 				"distance": 0.7,
 				"direction": "southeast",
 				"payment": true,
-				"site": "http://www.lestats.com/",
+				"site": "lestats.com",
 				"hours": {
 					"monday": ["24h"],
 					"tuesday": ["24h"],
@@ -165,7 +165,7 @@
 				"distance": 4.7,
 				"direction": "southwest",
 				"payment": true,
-				"site": "http://www.betterbuzzcoffee.com/",
+				"site": "betterbuzzcoffee.com",
 				"hours": {
 					"monday": ["6:30a", "7:00p"],
 					"tuesday": ["6:30a", "7:00p"],
@@ -186,7 +186,7 @@
 				"distance": 6.7,
 				"direction": "north",
 				"payment": true,
-				"site": "http://www.zumbarcoffee.com/",
+				"site": "zumbarcoffee.com",
 				"hours": {
 					"monday": ["6:00a", "5:00p"],
 					"tuesday": ["6:00a", "5:00p"],
@@ -205,7 +205,7 @@
 				"distance": 3.7,
 				"direction": "southeast",
 				"payment": true,
-				"site": "http://www.mysticmocha.us/",
+				"site": "mysticmocha.us",
 				"hours": {
 					"monday": ["6:00a", "4:00p"],
 					"tuesday": ["6:00a", "4:00p"],
