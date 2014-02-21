@@ -1,11 +1,19 @@
 body {
-     background: #343434 url('../images/debut_dark.png') top left repeat;
-     color:#a7c8a5;
+     background: #d0d0d0 url('../images/texturetastic_gray.png') top left repeat;
+     color:#766759;
      font-family: Bitter, Georgia, serif;
 }
 
 a, a:active, a:hover {
   text-decoration: none;
+}
+
+a {
+  color:#286F7E;
+}
+
+a:hover {
+  color:#084F5E;
 }
 
 a:hover .l-lt {
@@ -17,8 +25,15 @@ a:hover .l-lt {
 }
 
 .logo-name a, .logo-name-sm a {
-  color:#FFB33C;
+  color:#F2AA39;
+  text-shadow:
+   -2px -2px 0 rgba(255,255,255,0.5),  
+    2px -2px 0 rgba(255,255,255,0.5),
+    -2px 2px 0 rgba(255,255,255,0.5),
+     2px 2px 0 rgba(255,255,255,0.5);
 }
+
+
 
 .container {
   padding-bottom: 30px;
@@ -26,6 +41,7 @@ a:hover .l-lt {
 
 .logo-mom {
   font-family: 'Lily Script One', serif;
+  z-index:1;
 }
 
 .logo-and {
@@ -35,11 +51,10 @@ a:hover .l-lt {
   height:40px;
   font-size:40px;
   font-family: 'Ovo', serif;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.75);
   -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
           border-radius: 20px;
-  z-index:2;
 }
 
 .logo-pop {
@@ -63,6 +78,10 @@ a:hover .l-lt {
   text-align:center;
 }
 
+.smaller {
+  font-size:80%;
+}
+
 .category {
   font-size:18px;
   text-transform:lowercase;
@@ -72,12 +91,12 @@ a:hover .l-lt {
   color:#FFB33C;
 }
 
-.p-category {
+.p-category, #place-name {
   font-family: 'Sniglet', serif;
   font-size:36px;
   text-transform: capitalize;
   text-align: center;
-  color:#FFB33C;
+  color:#f49f1a;
 }
 
 .p-cat-icon {
@@ -101,6 +120,15 @@ a:hover .l-lt {
   text-align: center;
 }
 
+h4 {
+  font-family:'Bitter', sans-serif;
+}
+
+.dir-link {
+  font-family: 'Sniglet', sans-serif;
+  font-size:18px;
+}
+
 .cat-icon {
   font-size:36px;
   color:#222222;
@@ -117,9 +145,14 @@ a:hover .l-lt {
   display: none;
 }
 
+.icon-star, .icon-star-half {
+  margin-right:3px;
+}
+
 a.cat-link {
   display: block;
   text-decoration:none;
+  /* font-weight: bold; */
 }
 
 #places {
@@ -131,10 +164,12 @@ a.cat-link {
   list-style: none;
   margin: 5px 10px;
   padding: 10px;
-  background: rgba(150,150,150,0.5);
+  background: rgba(255,255,255,0.2);
+  border-bottom: rgba(150,150,150,0.5) 3px solid;
 }
 
 .place .title {
+  color: #185F6E;
   font-size:24px;
 }
 
@@ -143,29 +178,32 @@ a.cat-link {
 }
 
 .place .next {
+  height:100%;
   font-size:20px;
-  font-family:'Sniglet', sans-serif;
+  line-height:40px;
+  font-family:'Flamenco', sans-serif;
   float:right;
-  vertical-align: center;
-  position:relative;
-  top:8px;
+  display:inline-block;
+  vertical-align: middle;
+  text-align:center;
+  width:40px;
+  height:40px;
   background:#339DA3;
   color:#dfdfdf;
-  padding:5px 9px;
-  margin-right:5px;
-    -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
+    -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .place .rating {
+  color:#EBD229;
   font-size:28px;
 }
 
 
 
 .footer {
-  background:rgba(255,255,255,0.2);
+  background:rgba(0,0,0,0.1);
   padding:15px;
   font-size:16px;
 }
@@ -176,7 +214,7 @@ a.cat-link {
 }
 
 .footer a {
-  color:#bfbfbf;
+  color:#7a7a7a;
 }
 
 a.open-down {
