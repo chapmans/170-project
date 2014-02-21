@@ -12,9 +12,9 @@ function setDisplayTo(destination, elementId) {
 	});
 }
 
-function setDistanceTo(destination, elementId) {
+function setDirectionAndDistanceTo(destination, elementId) {
 	getGeolocation(function(response) {
-	    setDistanceToHelper(destination, elementId, response);
+	    setDirectionAndDistanceToHelper(destination, elementId, response);
 	});
 }
 
@@ -38,7 +38,23 @@ function getCurrentLocation(pos) {
 	return currentLocation;
 }
 
-function setDistanceToHelper(end, elementId, pos) {
+function getDirection(start, end) {
+	if(end['lat'] > start['lat']) { // north
+		if(end['lng'] > start['lng']) { // east
+			return 'northeast';
+		} else { // west
+			return 'northwest';
+		}
+	} else { // south
+		if(end['lng'] > start['lng']) { // east
+			return 'southeast';
+		} else { // west
+			return 'southwest';
+		}
+	}
+}
+
+function setDirectionAndDistanceToHelper(end, elementId, pos) {
 	var request = {
 		origin: getCurrentLocation(pos),
 		destination: end,
@@ -49,7 +65,10 @@ function setDistanceToHelper(end, elementId, pos) {
 	directionsService.route(request, function(response, status) {
 		var element = document.getElementById(elementId);
 		var distance = response.routes[0].legs[0].distance.text;
-		element.innerText = distance;
+		var start_location = response.routes[0].legs[0].start_location;
+		var end_location = response.routes[0].legs[0].end_location;
+		var direction = getDirection(start_location, end_location);
+		element.innerText = direction + " " + distance;
 	});
 }
 

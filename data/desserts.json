@@ -82,7 +82,7 @@
 		], 
 		[
 			{ "place": "Heaven Sent Desserts",
-				"place": "Heaven_Sent_Desserts",
+				"uid": "Heaven_Sent_Desserts",
 				"address": "3001 University Ave, San Diego, CA 92104",
 				"rating": 3.5,
 				"open": false,
@@ -120,7 +120,7 @@
 				}
 			},
 			{ "place": "Up2you Cafe",
-				"place": "Up2you_Cafe",
+				"uid": "Up2you_Cafe",
 				"address": "7770 Vickers St, San Diego, CA 92111",
 				"rating": 3.5,
 				"open": true,

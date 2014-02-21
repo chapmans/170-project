@@ -3,6 +3,25 @@
 	"icon": "icon-coffee",
 	"places": [
 		[
+			{ "place": "The Coffee Corner",
+				"uid": "the_coffee_corner",
+				"address": "6705 Linda Vista Rd, San Diego, CA 92111",
+				"rating": 4.5,
+				"open": false,
+				"distance": 0.4,
+				"direction": "north",
+				"payment": true,
+				"site": "coffeecornersd.com",
+				"hours": {
+					"monday": ["6:00p", "10:00p"],
+					"tuesday": ["6:00p", "10:00p"],
+					"wednesday": ["6:00p", "10:00p"],
+					"thursday": ["6:00p", "10:00p"],
+					"friday": ["6:00p", "10:00p"],
+					"saturday": ["6:00p", "10:00p"],
+					"sunday": ["0h"]
+				}
+			},
 			{ "place": "Bird Rock Coffee Roasters",
 				"uid": "Bird_Rock_Coffee_Roasters",
 				"address": "5627 La Jolla Blvd, La Jolla, CA 92037",
@@ -195,6 +214,25 @@
 					"friday": ["6:00a", "4:00p"],
 					"saturday": ["6:30a", "4:00p"],
 					"sunday": ["6:30a", "4:00p"]
+				}
+			},
+			{ "place": "Subterranean Coffee Boutique",
+				"uid": "subterranean_coffee_boutique",
+				"address": "3764 30th St, San Diego, CA 92104",
+				"rating": 4.5,
+				"open": true,
+				"distance": 2.8,
+				"direction": "west",
+				"payment": true,
+				"site": "subterraneancoffeeboutique.com",
+				"hours": {
+					"monday": ["6:00a", "9:00p"],
+					"tuesday": ["6:00a", "9:00p"],
+					"wednesday": ["6:00a", "9:00p"],
+					"thursday": ["6:00a", "9:00p"],
+					"friday": ["6:00a", "9:00p"],
+					"saturday": ["7:00a", "10:00p"],
+					"sunday": ["7:00a", "10:00p"]
 				}
 			}
 		]
