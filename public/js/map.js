@@ -39,14 +39,16 @@ function getCurrentLocation(pos) {
 }
 
 function getDirection(start, end) {
-	if(end['lat'] > start['lat']) { // north
-		if(end['lng'] > start['lng']) { // east
+	var lat = 'd';
+	var lng = 'e';
+	if(end[lat] > start[lat]) { // north
+		if(end[lng] > start[lng]) { // east
 			return 'northeast';
 		} else { // west
 			return 'northwest';
 		}
 	} else { // south
-		if(end['lng'] > start['lng']) { // east
+		if(end[lng] > start[lng]) { // east
 			return 'southeast';
 		} else { // west
 			return 'southwest';
