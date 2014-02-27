@@ -17,22 +17,22 @@ exports.category = function(req, res) {
 
 exports.map = function(req, res) {
 	var cat = req.params.category;
-	var num = parseInt(req.params.id);
-	var pg = Math.floor(num/4);
-	var id = num % 4;
-	var place = data[cat].places[pg][id];
-	place.id = num;
+	var uid = req.params.id;
+	var places = data[cat].places;
+	var place = places.filter(function(val, i, arr) {
+		return uid == val.uid;
+	})[0];
 	place.category = cat;
 	res.render('map', place);
 }
 
 exports.directions = function(req, res) {
 	var cat = req.params.category;
-	var num = parseInt(req.params.id);
-	var pg = Math.floor(num/4);
-	var id = num % 4;
-	var place = data[cat].places[pg][id];
-	place.id = num;
+	var uid = req.params.id;
+	var places = data[cat].places;
+	var place = places.filter(function(val, i, arr) {
+		return uid == val.uid;
+	})[0];
 	place.category = cat;
 	res.render('directions', place);
 }
@@ -43,4 +43,22 @@ exports.about = function(req, res) {
 
 exports.help = function(req, res) {
 	res.render('help');
+}
+
+exports.suggest = function(req, res) {
+	var cat = req.query.cat;
+	var catCheck = {
+		category: cat,
+		coffee: cat == 'coffee',
+		dessert: cat == 'desserts',
+		music: cat == 'music',
+		clothing: cat == 'clothing',
+		restaurants: cat == 'restaurants',
+		trinkets: cat == 'trinkets'
+	}
+	res.render('suggest', catCheck);
+}
+
+exports.suggestThanks = function(req, res) {
+	res.render('suggest-thanks');
 }

@@ -2,9 +2,9 @@
 	"category": "music",
 	"icon": "icon-uniF608",
 	"places": [
-		[
+		
 			{ "place": "M-Theory Music",
-				"uid": "M_Theory_Music",
+				"uid": "m-theory-music",
 				"address": "915 W Washington St, San Diego, CA 92103",
 				"rating": 4.5,
 				"payment": true,
@@ -22,7 +22,7 @@
 				}
 			},
 			{ "place": "Greene Music",
-				"uid": "greene_music",
+				"uid": "greene-music",
 				"address": "7480 Miramar Rd, San Diego, CA 92126",
 				"rating": 5,
 				"payment": true,
@@ -40,10 +40,9 @@
 				}
 			},
 			{ "place": "Access Music",
-				"uid": "access_music",
+				"uid": "access-music",
 				"address": "1537 Garnet Ave, San Diego, CA 92109",
 				"rating": 5,
-				"direction": "west",
 				"payment": true,
 				"site": "accesshiphop.com",
 				"latitude": -117.241865,
@@ -59,12 +58,9 @@
 				}
 			},
 			{ "place": "Bertrand's Music",
-				"uid": "bertrand_music",
+				"uid": "bertrands-music",
 				"address": "13179 Black Mountain Rd, Ste 5, San Diego, CA 92129",
 				"rating": 4,
-				"open": true,
-				"distance": 2.9,
-				"direction": "north",
 				"payment": true,
 				"site": "bertrandmusic.com",
 				"latitude": -117.125822,
@@ -80,12 +76,9 @@
 				}
 			},
 			{ "place": "Apex Music Company",
-				"uid": "apex_music_company",
+				"uid": "apex-music-company",
 				"address": "6210 El Cajon Blvd, San Diego, CA 92115",
 				"rating": 4.5,
-				"open": true,
-				"distance": 8.2,
-				"direction": "southwest",
 				"payment": true,
 				"site": "apex4me.com",
 				"latitude": -117.064261,
@@ -99,16 +92,11 @@
 					"saturday": ["10:00a", "6:00p"],
 					"sunday": ["12:00p", "6:00p"]
 				}
-			}
-		],
-		[
+			},
 			{ "place": "Music Power",
-				"uid": "music_power",
+				"uid": "music-power",
 				"address": "7120 Clairemont Mesa Blvd, San Diego, CA 92111",
 				"rating": 4.5,
-				"open": true,
-				"distance": 3.6,
-				"direction": "west",
 				"payment": true,
 				"site": "musicpower.com",
 				"latitude": -117.163512,
@@ -124,12 +112,9 @@
 				}
 			},
 			{ "place": "Record City",
-				"uid": "Record_City",
+				"uid": "record-city",
 				"address": "3757 6th Ave, San Diego, CA 92103",
 				"rating": 4.5,
-				"open": true,
-				"distance": 0.5,
-				"direction": "southeast",
 				"payment": true,
 				"site": "recordcityonline.com",
 				"latitude": -117.159418,
@@ -145,12 +130,9 @@
 				}
 			},
 			{ "place": "Off the Record",
-				"uid": "Off_the_Record",
+				"uid": "off-the-record",
 				"address": "2912 University Ave, San Diego, CA 92104",
 				"rating": 3,
-				"open": true,
-				"distance": 0.5,
-				"direction": "southeast",
 				"payment": true,
 				"site": "offtherecordmusic.com",
 				"latitude": -117.130989,
@@ -166,12 +148,9 @@
 				}
 			}, 
 			{ "place": "Nickelodeon Records",
-				"uid": "Nickelodeon_Records",
+				"uid": "nickelodeon-records",
 				"address": "3335 Adams Ave, San Diego, CA 92116",
 				"rating": 4,
-				"open": true,
-				"distance": 3.2,
-				"direction": "southeast",
 				"payment": true,
 				"site": "nickelodeonrecords.com",
 				"latitude": -117.122165,
@@ -186,6 +165,6 @@
 					"sunday": ["11:00a", "5:30p"]
 				}
 			}
-		]
+		
 	]
 }

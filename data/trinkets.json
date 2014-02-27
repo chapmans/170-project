@@ -2,14 +2,11 @@
 	"category": "trinkets",
 	"icon": "icon-watch",
 	"places": [
-		[
+		
 			{ "place": "Bad Madge & Company",
-				"uid": "bad_madge_and_company",
+				"uid": "bad-madge-and-company",
 				"address": "2205 Fern St, San Diego, CA 92104",
 				"rating": 5,
-				"open": true,
-				"distance": 3.5,
-				"direction": "northwest",
 				"payment": true,
 				"site": "badmadge.com",
 				"latitude": -117.129538,
@@ -25,10 +22,9 @@
 				}
 			},
 			{ "place": "Gum Saan",
-				"uid": "gum_saan",
+				"uid": "gum-saan",
 				"address": "2615 San Diego Ave, San Diego, CA 92110",
 				"rating": 4,
-				"direction": "west",
 				"payment": true,
 				"latitude": -117.196044,
 				"longitude": 32.753393,
@@ -43,12 +39,9 @@
 				}
 			},
 			{ "place": "Pangaea Outpost",
-				"uid": "pangaea_outpost",
+				"uid": "pangaea-outpost",
 				"address": "909 Garnet Ave, San Diego, CA 92109",
 				"rating": 4,
-				"open": true,
-				"distance": 8.3,
-				"direction": "north",
 				"payment": true,
 				"site": "pangaeaoutpost.com",
 				"latitude": -117.253236,
@@ -64,12 +57,9 @@
 				}
 			},
 			{ "place": "The Black Bead",
-				"uid": "the_black_bead",
+				"uid": "the-black-bead",
 				"address": "5003 Newport Ave, San Diego, CA 92107",
 				"rating": 4.5,
-				"open": true,
-				"distance": 3.5,
-				"direction": "southwest",
 				"payment": true,
 				"site": "theblackbead.com",
 				"latitude": -117.251409,
@@ -83,16 +73,11 @@
 					"saturday": ["10:30a", "7:00p"],
 					"sunday": ["11:00p", "6:00p"]
 				}
-			}
-		],
-		[
+			},
 			{ "place": "Masquerade",
 				"uid": "masquerade",
 				"address": "1608 India St, Ste 105, San Diego, CA 92101",
 				"rating": 3.5,
-				"open": true,
-				"distance": 8.4,
-				"direction": "southeast",
 				"payment": true,
 				"latitude": -117.168586,
 				"longitude": 32.722266,
@@ -107,12 +92,9 @@
 				}
 			},
 			{ "place": "Make Good",
-				"uid": "Make_Good",
+				"uid": "make-good",
 				"address": "2207 Fern St, San Diego, CA 92104",
 				"rating": 5,
-				"open": true,
-				"distance": 0.5,
-				"direction": "southeast",
 				"payment": true,
 				"site": "themakegood.com",
 				"latitude": -117.129504,
@@ -128,12 +110,9 @@
 				}
 			}, 
 			{ "place": "TimeWise Jewelers",
-				"uid": "TimeWise_Jewelers",
+				"uid": "timewise-jewelers",
 				"address": "5643 Balboa Ave, San Diego, CA 92111",
 				"rating": 4.5,
-				"open": true,
-				"distance": 0.5,
-				"direction": "southeast",
 				"payment": true,
 				"site": "timewisejewelers.com",
 				"latitude": -117.179172,
@@ -149,12 +128,9 @@
 				}
 			},
 			{ "place": "Noon Designs",
-				"uid": "Noon_Designs",
+				"uid": "noon-designs",
 				"address": "4993 Niagara Ave, San Diego, CA 92107",
 				"rating": 5,
-				"open": true,
-				"distance": 3.2,
-				"direction": "southeast",
 				"payment": true,
 				"site": "noondesignshop.com",
 				"latitude": -117.251784,
@@ -169,6 +145,6 @@
 					"sunday": ["10:00p", "5:00p"]
 				}
 			}
-		]
+		
 	]
 }

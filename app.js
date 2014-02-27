@@ -51,7 +51,10 @@ app.get('/about', project.about);
 app.get('/help', project.help);
 app.get('/places/:category/:id', project.map);
 app.get('/places/:category/:id/directions', project.directions);
-app.get('/loadmore', api.getMorePlaces);
+app.get('/loadcat', api.getPlaces);
+app.get('/suggest', project.suggest);
+app.get('/suggest/thanks', project.suggestThanks);
+app.post('/flag', api.flag);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

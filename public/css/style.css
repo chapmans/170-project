@@ -129,6 +129,10 @@ h4 {
   font-size:18px;
 }
 
+.info {
+  font-weight:bold;
+}
+
 .cat-icon {
   font-size:36px;
   color:#222222;

@@ -4,41 +4,13 @@
 		<span class="is-multipage" style="display:none">{{multipage}}</span>
 		<div class="row">
 			<ul id="places">
-			{{#each places.[0]}}
-				<div class="distance-magnitude" id="distance-magnitude-{{uid}}" hidden></div>
-				<script> setDistanceValueTo("{{address}}", "distance-magnitude-{{uid}}"); </script>
-				<!-- set distance value of current place to whatever is in the div above-->
-			{{/each}}
-			
-			{{#each places.[0]}}
-				<li class="place">
-					<a class="next" href="/places/{{../category}}/{{@index}}">GO</a>
-					<div class="name">
-						<a class="open-down icon-uniF48B"></a>
-						<div class="title">{{place}}</div>
-						<!--<div class="info">{{direction}} {{distance}} mi</div>-->
-						<div class="info" id="info-{{uid}}">
-							<script> setDirectionAndDistanceTo("{{address}}", "info-{{uid}}"); </script>
-						</div>
-					</div>
-					<div class="more-info">
-						<div class="rating">{{rating}}</div>
-						<div class="hours">Today's hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div>
-						<div class="site"><a href="http://{{site}}">{{site}}</a></div>
-						<div class="payment">
-							{{#if payment}}
-								Accepts credit cards
-							{{else}}
-								Cash only
-							{{/if}}
-						</div>
-					</div>
-				</li>
-			{{/each}}
-		</ul>
-		<div class="more">
-			<a href="#" class="btn btn-more btn-lg btn-block">more</a>
-		</div>
+			</ul>
+			<div class="more">
+				<a href="#" class="btn btn-more btn-lg btn-block">more</a>
+			</div>
+			<div class="suggest">
+				<a href="/suggest?cat={{category}}" class="btn btn-more btn-block">Is your favorite mom and pop store not listed? Suggest one!</a>
+			</div>
 		</div>
 	</div>
 
