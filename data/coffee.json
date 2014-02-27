@@ -2,16 +2,16 @@
 	"category": "coffee",
 	"icon": "icon-coffee",
 	"places": [
-		[
+		
 			{ "place": "The Coffee Corner",
 				"uid": "the_coffee_corner",
 				"address": "6705 Linda Vista Rd, San Diego, CA 92111",
 				"rating": 4.5,
-				"open": false,
-				"distance": 0.4,
 				"direction": "north",
 				"payment": true,
 				"site": "coffeecornersd.com",
+				"latitude": -117.173609,
+				"longitude": 32.775399,
 				"hours": {
 					"monday": ["6:00p", "10:00p"],
 					"tuesday": ["6:00p", "10:00p"],
@@ -26,11 +26,11 @@
 				"uid": "Bird_Rock_Coffee_Roasters",
 				"address": "5627 La Jolla Blvd, La Jolla, CA 92037",
 				"rating": 4.5,
-				"open": false,
-				"distance": 0.2,
 				"direction": "south",
 				"payment": true,
 				"site": "birdrockcoffeeroasters.com",
+				"latitude": -117.269770,
+				"longitude": 32.814439,
 				"hours": {
 					"monday": ["6:00a", "6:00p"],
 					"tuesday": ["6:00a", "6:00p"],
@@ -45,11 +45,11 @@
 				"uid": "Clairemont_Coffee",
 				"address": "3095 Clairemont Dr, San Diego, CA 92117",
 				"rating": 4.5,
-				"open": true,
-				"distance": 0.3,
 				"direction": "southeast",
 				"payment": "true",
 				"site": "clairemontcoffee.com",
+				"latitude": -117.192916,
+				"longitude": 32.797353,
 				"hours": {
 					"monday": ["6:00a", "7:00p"],
 					"tuesday": ["6:00a", "7:00p"],
@@ -64,11 +64,11 @@
 				"uid": "Dark_Horse_Coffee_Roasters",
 				"address": "3260 Adams Ave, San Diego, CA 92116",
 				"rating": 4.5,
-				"open": true,
-				"distance": 0.5,
 				"direction": "southeast",
 				"payment": true,
 				"site": "darkhorseroasting.com",
+				"latitude": -117.123408,
+				"longitude": 32.763493,
 				"hours": {
 					"monday": ["6:30a", "6:30p"],
 					"tuesday": ["6:30a", "6:30p"],
@@ -83,11 +83,11 @@
 				"uid": "Industrial_Grind_Coffee",
 				"address": "3922 1/2 Park Blvd, San Diego, CA 92103",
 				"rating": 4.5,
-				"open": true,
-				"distance": 0.7,
 				"direction": "southeast",
 				"payment": true,
 				"site": "industrialgrindcoffee.com",
+				"latitude": -117.146708,
+				"longitude": 32.749087,
 				"hours": {
 					"monday": ["7:00a", "6:00p"],
 					"tuesday": ["7:00a", "6:00p"],
@@ -97,18 +97,18 @@
 					"saturday": ["8:00a", "1:00p"],
 					"sunday": ["8:00a", "1:00p"]
 				}
-			}
-		],
-		[
+			},
+		
+		
 			{ "place": "Coffee & Tea Collective",
 				"uid": "Coffee_and_Tea_Collective",
 				"address": "2911 El Cajon Blvd, San Diego, CA 92104",
 				"rating": 4.5,
-				"open": true,
-				"distance": 2.4,
 				"direction": "southeast",
 				"payment": true,
 				"site": "coffeeandteacollective.com",
+				"latitude": -117.131019,
+				"longitude": 32.755139,
 				"hours": {
 					"monday": ["7:00a", "6:00p"],
 					"tuesday": ["7:00a", "6:00p"],
@@ -123,11 +123,11 @@
 				"uid": "Roast_Coach",
 				"address": "3382 30th St, San Diego, CA 92104",
 				"rating": 4.5,
-				"open": true,
-				"distance": 0.7,
 				"direction": "southeast",
 				"payment": true,
 				"site": "roastcoach.com",
+				"latitude": -117.129506,
+				"longitude": 32.740781,
 				"hours": {
 					"monday": ["7:00a", "1:00p"],
 					"tuesday": ["7:00a", "1:00p"],
@@ -142,11 +142,11 @@
 				"uid": "Lestats_Coffee_House",
 				"address": "3343 Adams Ave, San Diego, CA 92116",
 				"rating": 4,
-				"open": true,
-				"distance": 0.7,
 				"direction": "southeast",
 				"payment": true,
 				"site": "lestats.com",
+				"latitude": -117.121971,
+				"longitude": 32.763230,
 				"hours": {
 					"monday": ["24h"],
 					"tuesday": ["24h"],
@@ -161,11 +161,11 @@
 				"uid": "Better_Buzz_Coffee_The_Lab",
 				"address": "3745 Mission Blvd, San Diego, CA 92109",
 				"rating": 4.5,
-				"open": true,
-				"distance": 4.7,
 				"direction": "southwest",
 				"payment": true,
 				"site": "betterbuzzcoffee.com",
+				"latitude": -117.252777,
+				"longitude": 32.783798,
 				"hours": {
 					"monday": ["6:30a", "7:00p"],
 					"tuesday": ["6:30a", "7:00p"],
@@ -175,9 +175,9 @@
 					"saturday": ["6:30a", "7:00p"],
 					"sunday": ["6:30a", "7:00p"]
 				}
-			}
-		],
-		[
+			},
+		
+		
 			{ "place": "Zumbar Coffee & Tea",
 				"uid": "Zumbar_Coffee_Tea",
 				"address": "10920 Roselle St, San Diego, CA 92121",
@@ -187,6 +187,8 @@
 				"direction": "north",
 				"payment": true,
 				"site": "zumbarcoffee.com",
+				"latitude": -117.225532,
+				"longitude": 32.902011,
 				"hours": {
 					"monday": ["6:00a", "5:00p"],
 					"tuesday": ["6:00a", "5:00p"],
@@ -206,6 +208,8 @@
 				"direction": "southeast",
 				"payment": true,
 				"site": "mysticmocha.us",
+				"latitude": -117.142373,
+				"longitude": 32.759393,
 				"hours": {
 					"monday": ["6:00a", "4:00p"],
 					"tuesday": ["6:00a", "4:00p"],
@@ -225,6 +229,8 @@
 				"direction": "west",
 				"payment": true,
 				"site": "subterraneancoffeeboutique.com",
+				"latitude": -117.129827,
+				"longitude": 32.746835,
 				"hours": {
 					"monday": ["6:00a", "9:00p"],
 					"tuesday": ["6:00a", "9:00p"],
@@ -235,6 +241,6 @@
 					"sunday": ["7:00a", "10:00p"]
 				}
 			}
-		]
+		
 	]
 }

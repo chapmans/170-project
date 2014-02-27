@@ -6,18 +6,6 @@
 	//return str.replace(/\W/g, '');
 //}
 
-function setDisplayTo(destination, elementId) {
-	getGeolocation(function(pos) {
-		renderDisplay(destination, elementId, pos);
-	});
-}
-
-function setDirectionAndDistanceTo(destination, elementId) {
-	getGeolocation(function(response) {
-	    setDirectionAndDistanceToHelper(destination, elementId, response);
-	});
-}
-
 // --------------------------------------------------------
 // Helper functions
 // --------------------------------------------------------
@@ -36,6 +24,54 @@ function getGeolocation(callback) {
 function getCurrentLocation(pos) {
 	var currentLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
 	return currentLocation;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function setDisplayTo(destination, elementId) {
+	getGeolocation(function(pos) {
+		renderDisplay(destination, elementId, pos);
+	});
+}
+
+function renderDisplay(destination, elementId, pos) {
+	renderer = new google.maps.DirectionsRenderer();
+	map = new google.maps.Map(document.getElementById(elementId), {
+		zoom: 7,
+		content: "Location found using HTML5."
+	});
+	renderer.setMap(map);
+
+	var request = {
+		origin: getCurrentLocation(pos), 
+		destination: destination,
+		travelMode: google.maps.DirectionsTravelMode.DRIVING
+	};
+
+	var directionsService = new google.maps.DirectionsService();
+	directionsService.route(request, function(response, status) {
+		if (status == google.maps.DirectionsStatus.OK) {
+			renderer.setDirections(response);
+ 		}
+
+		var route = response.routes[0].legs[0];
+
+		var appendString = '<h4>Start from: ' + route.start_address + '</h4><ol>';
+		for (var i = 0; i < route.steps.length; i++) {
+			appendString += '<li>' + route.steps[i].instructions + '</li>';
+		}
+		appendString += '</ol><h4>End at: ' + route.end_address + '</h4>';
+
+		$('#directions').append(appendString);
+	});
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function setDirectionAndDistanceTo(destination, elementId) {
+	getGeolocation(function(response) {
+	    setDirectionAndDistanceToHelper(destination, elementId, response);
+	});
 }
 
 function getDirection(start, end) {
@@ -75,36 +111,43 @@ function setDirectionAndDistanceToHelper(end, elementId, pos) {
 	});
 }
 
+///////////////////////////////////////////////////////////////////////////////
 
-
-function renderDisplay(destination, elementId, pos) {
-	renderer = new google.maps.DirectionsRenderer();
-	map = new google.maps.Map(document.getElementById(elementId), {
-		zoom: 7,
-		content: "Location found using HTML5."
+function setDistanceMagnitudeTo(destination, elementId) {
+	getGeolocation(function(response) {
+	    setDirectionMagnitudeHelper(destination, elementId, response);
 	});
-	renderer.setMap(map);
+}
+
+function setDirectionMagnitudeHelper(end, elementId, pos) {
+	var current_loc_latitude = pos.coords.latitude;
+	var current_loc_longitude = pos.coords.longitude;
 
 	var request = {
-		origin: getCurrentLocation(pos), 
-		destination: destination,
+		origin: getCurrentLocation(pos),
+		destination: end,
 		travelMode: google.maps.DirectionsTravelMode.DRIVING
 	};
 
 	var directionsService = new google.maps.DirectionsService();
 	directionsService.route(request, function(response, status) {
-		if (status == google.maps.DirectionsStatus.OK) {
-			renderer.setDirections(response);
- 		}
+		var element = document.getElementById(elementId);
 
-		var route = response.routes[0].legs[0];
+		var start_latitude = response.routes[0].legs[0].start_location['d'];
+		var start_longitude = response.routes[0].legs[0].start_location['e'];
 
-		var appendString = '<h4>Start from: ' + route.start_address + '</h4><ol>';
-		for (var i = 0; i < route.steps.length; i++) {
-			appendString += '<li>' + route.steps[i].instructions + '</li>';
-		}
-		appendString += '</ol><h4>End at: ' + route.end_address + '</h4>';
+		var end_latitude = response.routes[0].legs[0].end_location['d'];
+		var end_longitude = response.routes[0].legs[0].end_location['e'];
 
-		$('#directions').append(appendString);
+		element.innerText = getDistanceMagnitude(start_latitude, start_longitude, end_latitude, end_longitude);
 	});
 }
+
+function getDistanceMagnitude(start_latitude, start_longitude, end_latitude, end_longitude) {
+	var magnitude_start = sqrt((start_latitude * start_latitude) + (start_longitude * start_longitude));
+	var magnitude_end = sqrt((end_latitude * end_latitude) + (end_longitude * end_longitude));
+
+	return abs(magnitude_end - magnitude_start);
+}
+
+///////////////////////////////////////////////////////////////////////////////

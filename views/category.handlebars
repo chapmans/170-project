@@ -5,6 +5,12 @@
 		<div class="row">
 			<ul id="places">
 			{{#each places.[0]}}
+				<div class="distance-magnitude" id="distance-magnitude-{{uid}}" hidden></div>
+				<script> setDistanceValueTo("{{address}}", "distance-magnitude-{{uid}}"); </script>
+				<!-- set distance value of current place to whatever is in the div above-->
+			{{/each}}
+			
+			{{#each places.[0]}}
 				<li class="place">
 					<a class="next" href="/places/{{../category}}/{{@index}}">GO</a>
 					<div class="name">

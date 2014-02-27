@@ -2,7 +2,6 @@
 	"category": "restaurants",
 	"icon": "icon-food",
 	"places": [
-		[
 			{ "place": "Phil's BBQ",
 				"uid": "Phil_s_BBQ",
 				"address": "3750 Sports Arena Blvd, San Diego, CA 92110",
@@ -12,6 +11,8 @@
 				"direction": "south",
 				"payment": true,
 				"site": "philsbbq.net",
+				"latitude": -117.215892,
+				"longitude": 32.755026,
 				"hours": {
 					"monday": ["0h"],
 					"tuesday": ["11:00a", "10:00p"],
@@ -31,6 +32,8 @@
 				"direction": "east",
 				"payment": true,
 				"site": "muzita.com",
+				"latitude": -117.146173,
+				"longitude": 32.762129,
 				"hours": {
 					"monday": ["5:00p", "10:00p"],
 					"tuesday": ["5:00p", "10:00p"],
@@ -50,6 +53,8 @@
 				"direction": "east",
 				"payment": true,
 				"site": "amarinsandiego.com",
+				"latitude": -117.151166,
+				"longitude": 32.748002,
 				"hours": {
 					"monday": ["11:00a", "3:00p"],
 					"tuesday": ["11:00a", "3:00p"],
@@ -69,6 +74,8 @@
 				"direction": "north",
 				"payment": true,
 				"site": "sushiota.com",
+				"latitude": -117.216432,
+				"longitude": 32.803698,
 				"hours": {
 					"monday": ["5:30p", "10:30p"],
 					"tuesday": ["5:30p", "10:30p"],
@@ -79,27 +86,6 @@
 					"sunday": ["5:00p", "10:30p"]
 				}
 			},
-			{ "place": "The Oceanaire Seafood Room",
-				"uid": "the_oceanaire_seafood_room",
-				"address": "400 J St, San Diego, CA 92101",
-				"rating": 4,
-				"open": true,
-				"distance": 3.8,
-				"direction": "north",
-				"payment": true,
-				"site": "theoceanaire.com",
-				"hours": {
-					"monday": ["5:00p", "10:00p"],
-					"tuesday": ["5:00p", "10:00p"],
-					"wednesday": ["5:00p", "10:00p"],
-					"thursday": ["5:00p", "10:00p"],
-					"friday": ["5:00p", "11:00p"],
-					"saturday": ["5:00p", "11:00p"],
-					"sunday": ["5:00a", "10:00p"]
-				}
-			}
-		],
-		[
 			{ "place": "Pomegranate Russian-Georgian Restaurant",
 				"uid": "pomegranate_russian_georgian_restaurant",
 				"address": "2312 El Cajon Blvd, San Diego, CA 92104",
@@ -109,6 +95,8 @@
 				"direction": "northeast",
 				"payment": true,
 				"site": "pomegranatesd.com",
+				"latitude": -117.139671,
+				"longitude": 32.755668,
 				"hours": {
 					"monday": ["5:00p", "10:00p"],
 					"tuesday": ["5:00p", "10:00p"],
@@ -128,6 +116,8 @@
 				"direction": "west",
 				"payment": true,
 				"site": "okanus.com",
+				"latitude": -117.153751,
+				"longitude": 32.814107,
 				"hours": {
 					"monday": ["5:30p", "10:30p"],
 					"tuesday": ["5:30p", "10:30p"],
@@ -147,6 +137,8 @@
 				"direction": "northeast",
 				"payment": true,
 				"site": "buonappetitosandiego.com",
+				"latitude": -117.168129,
+				"longitude": 32.722392,
 				"hours": {
 					"monday": ["11:00a", "10:00p"],
 					"tuesday": ["11:00a", "10:00p"],
@@ -166,6 +158,8 @@
 				"direction": "southeast",
 				"payment": true,
 				"site": "carnitassnackshack.com",
+				"latitude": -117.135500,
+				"longitude": 32.748830,
 				"hours": {
 					"monday": ["12:00p", "12:00a"],
 					"tuesday": ["12:00p", "12:00a"],
@@ -184,7 +178,9 @@
 				"distance": 0.5,
 				"direction": "southeast",
 				"payment": true,
-				"site": "offtherecordmusic.com",
+				"site": "punjabitandoor.com",
+				"latitude": -117.128251,
+				"longitude": 32.897113,
 				"hours": {
 					"monday": ["11:00a", "4:00p", "5:00p", "10:00p"],
 					"tuesday": ["11:00a", "4:00p", "5:00p", "10:00p"],
@@ -203,7 +199,9 @@
 				"distance": 3.2,
 				"direction": "southeast",
 				"payment": true,
-				"site": "punjabitandoor.com",
+				"site": "cucinaurbana.com",
+				"latitude": -117.160119,
+				"longitude": 32.731415,
 				"hours": {
 					"monday": ["0h"],
 					"tuesday": ["11:30a", "2:00p", "5:00p", "10:00p"],
@@ -214,6 +212,5 @@
 					"sunday": ["4:30p", "9:00p"]
 				}
 			}
-		]
 	]
 }
