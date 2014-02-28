@@ -43,7 +43,7 @@ function setMultipleDestinationsTo(places, category, elementId) {
 function renderMultipleDestinationMap(places, category, elementId, pos) {
 	console.log(getLatLng(places[0]));
 	map = new google.maps.Map(document.getElementById(elementId), {
-		zoom: 11,
+		zoom: 10,
 		center: getCurrentLocation(pos),
 		content: 'Location found using HTML5.'
 	});
