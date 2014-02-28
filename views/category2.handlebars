@@ -1,5 +1,6 @@
 {{> header}}
 
+		<h1 class="p-category"><span class="p-cat-icon {{icon}}"></span> <span class="cat-name">{{category}}</span></h1>
 		<div id="map-all-stores-panel" class="row pm2"></div>
 
 		<script>
@@ -8,14 +9,14 @@
 					url: "/loadplaces?cat={{category}}",
 					dataType: 'json',
 					success: function(places) {
-						setMultipleDestinationsTo(places, places[0].category, 'map-all-stores-panel');
+						setMultipleDestinationsTo(places, '{{category}}', 'map-all-stores-panel');
 					}
 				});
 			});
 		</script>
 
 			<div class="suggest">
-				<a href="/suggest?cat={{category}}" class="btn btn-more btn-block">Is your favorite mom and pop store not listed? Suggest one!</a>
+				<a href="/suggest?cat={{category}}" class="btn btn-more btn-block">Did we miss any Mom and Pop locations?<br>Let us know!</a>
 			</div>
 
 
