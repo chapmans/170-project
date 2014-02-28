@@ -1,0 +1,22 @@
+{{> header}}
+
+		<div id="map-all-stores-panel" class="row pm2"></div>
+
+		<script>
+			google.maps.event.addDomListener(window, 'load', function() {
+				var places = $.ajax({
+					url: "/loadplaces?cat={{category}}",
+					dataType: 'json',
+					success: function(places) {
+						setMultipleDestinationsTo(places, places[0].category, 'map-all-stores-panel');
+					}
+				});
+			});
+		</script>
+
+			<div class="suggest">
+				<a href="/suggest?cat={{category}}" class="btn btn-more btn-block">Is your favorite mom and pop store not listed? Suggest one!</a>
+			</div>
+
+
+{{> footer}}

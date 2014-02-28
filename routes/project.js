@@ -15,6 +15,14 @@ exports.category = function(req, res) {
 	res.render('category', print);
 }
 
+exports.category2 = function(req, res) {
+	var cat = req.params.name;
+	var page = req.query.page;
+	var print = data[cat];
+	print.multipage = (data[cat].places[1] == null) ? false : true;
+	res.render('category2', print);
+}
+
 exports.map = function(req, res) {
 	var cat = req.params.category;
 	var uid = req.params.id;

@@ -47,11 +47,13 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/category/:name', project.category);
+app.get('/category2/:name', project.category2);
 app.get('/about', project.about);
 app.get('/help', project.help);
 app.get('/places/:category/:id', project.map);
 app.get('/places/:category/:id/directions', project.directions);
 app.get('/loadcat', api.getPlaces);
+app.get('/loadplaces', api.getAllPlaces);
 app.get('/suggest', project.suggest);
 app.get('/suggest/thanks', project.suggestThanks);
 app.post('/flag', api.flag);

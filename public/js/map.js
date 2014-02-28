@@ -26,6 +26,69 @@ function getCurrentLocation(pos) {
 	return currentLocation;
 }
 
+function getLatLng(place) {
+	// TODO: latitude and longitude are flipped in json?
+	var latlng = new google.maps.LatLng(place.longitude, place.latitude);
+	return latlng;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function setMultipleDestinationsTo(places, category, elementId) {
+	getGeolocation(function(pos) {
+		renderMultipleDestinationMap(places, category, elementId, pos);
+	});
+}
+
+function renderMultipleDestinationMap(places, category, elementId, pos) {
+	console.log(getLatLng(places[0]));
+	map = new google.maps.Map(document.getElementById(elementId), {
+		zoom: 11,
+		center: getCurrentLocation(pos),
+		content: 'Location found using HTML5.'
+	});
+
+	for(var i = 0; i < places.length; i++) {
+		var marker = new google.maps.Marker({
+			position: getLatLng(places[i]),
+			map: map,
+			title: 'Map Centric Design!'
+		});
+
+		var category = category;
+		var place = places[i];
+
+		renderDestination(places[i], map, category, marker);
+	}
+}
+
+function renderDestination(place, map, category, marker) {
+	console.log("in renderdestination");
+	google.maps.event.addListener(marker, 'click', function() {
+		console.log("clicked marker");
+		var url = "/places/" + category + "/" + place.uid;
+
+		var rating = Number(place.rating);
+						var stars = '<div class="stars">';
+						var isOpen = calculateOpen(place);
+						var opentimes = calculateOpenTime(place);
+						var opentext = '<div class="open">' + ((isOpen) ? "open" : "closed") + opentimes+ "</div>";
+						while (rating > 0.6) {
+							stars += '<span class="icon-star"></span>';
+							rating -= 1;
+						}
+						if (rating < 0.6 && rating > 0.4) {
+							stars += '<span class="icon-star-half"></span>';
+						}
+						stars += '</div>';
+
+		var infowindow = new google.maps.InfoWindow({
+			content: '<a href="' + url + '">' + place.place + '</a>' + opentext + stars
+		});
+    infowindow.open(map,marker);
+	});
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
 function setDisplayTo(destination, elementId) {
@@ -101,7 +164,6 @@ function setDirectionAndDistanceToHelper(end, pos, callback) {
 
 	var directionsService = new google.maps.DirectionsService();
 	directionsService.route(request, function(response, status) {
-		console.log(response);
 		var distance = response.routes[0].legs[0].distance.text;
 		var start_location = response.routes[0].legs[0].start_location;
 		var end_location = response.routes[0].legs[0].end_location;
@@ -115,7 +177,7 @@ function setDirectionAndDistanceToHelper(end, pos, callback) {
 
 function setDistanceMagnitudeTo(destination, elementId) {
 	getGeolocation(function(response) {
-	    setDirectionMagnitudeHelper(destination, elementId, response);
+			setDirectionMagnitudeHelper(destination, elementId, response);
 	});
 }
 

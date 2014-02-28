@@ -25,6 +25,22 @@ exports.getPlaces = function(req, res) {
 	res.json(returnData);
 };
 
+exports.getAllPlaces = function(req, res) {
+	var cl = {
+		longitude: req.query.lon,
+		latitude: req.query.lat
+	};
+	var cat = req.query.cat;
+	var rData = data[cat].places;
+	rData.sort(function(a, b) {
+		var aMagnitude = Math.sqrt((a.latitude - cl.latitude)*(a.latitude - cl.latitude) + (a.longitude - cl.longitude)*(a.longitude - cl.longitude));
+		var bMagnitude = Math.sqrt((b.latitude - cl.latitude)*(b.latitude - cl.latitude) + (b.longitude - cl.longitude)*(b.longitude - cl.longitude));
+		return bMagnitude - aMagnitude;
+	});
+	res.json(rData);
+};
+
+
 exports.flag = function(req, res) {
 	res.json({flagged: true});
 }
