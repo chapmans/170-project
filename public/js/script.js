@@ -87,10 +87,10 @@ $(document).ready(function() {
 	if ($('#map-all-stores-panel').length) {
 		google.maps.event.addDomListener(window, 'load', function() {
 			var places = $.ajax({
-				url: "/loadplaces?cat={{category}}",
+				url: "/loadplaces?cat=" + $('.cat-name').text(),
 				dataType: 'json',
 				success: function(places) {
-					setMultipleDestinationsTo(places, '{{category}}', 'map-all-stores-panel');
+					setMultipleDestinationsTo(places, $('.cat-name').text(), 'map-all-stores-panel');
 				}
 			});
 		});
