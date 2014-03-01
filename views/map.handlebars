@@ -3,18 +3,13 @@
 	<div class="store-image">
 		<img src="/images/stores/{{place}}.jpg" class="img-responsive">
 	</div>
-
-	<script>
-		google.maps.event.addDomListener(window, 'load', function() {
-			setDisplayTo("{{address}}", 'map-panel');
-		});
-	</script>
-
+	
 	<div id="place-info" class="row">
 		<div class="col-md-12 col-xs-12">
 		<h1 id="place-name">
 			{{place}}
 		</h1>
+		<div style="display:none" class="uid">{{uid}}</div>
 		<div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half"></span></div>
 		<div class="hours">Today's hours: {{hours.friday.[0]}} - {{hours.friday.[1]}}</div>
 		<div class="site"><a href="http://{{site}}">{{site}}</a></div>

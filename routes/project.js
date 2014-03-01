@@ -12,6 +12,9 @@ exports.category = function(req, res) {
 	var page = req.query.page;
 	var print = data[cat];
 	print.multipage = (data[cat].places[1] == null) ? false : true;
+	print.catcoffee = (cat == 'coffee');
+	print.catdesserts = (cat == 'desserts');
+	print.mapcat = false;
 	res.render('category', print);
 }
 
@@ -20,6 +23,7 @@ exports.category2 = function(req, res) {
 	var page = req.query.page;
 	var print = data[cat];
 	print.multipage = (data[cat].places[1] == null) ? false : true;
+	print.mapcat = true;
 	res.render('category2', print);
 }
 

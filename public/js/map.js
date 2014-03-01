@@ -52,13 +52,16 @@ function renderMultipleDestinationMap(places, category, elementId, pos) {
 		var marker = new google.maps.Marker({
 			position: getLatLng(places[i]),
 			map: map,
-			title: 'Map Centric Design!'
+			title: places[i].place
 		});
 
 		var category = category;
 		var place = places[i];
 
 		renderDestination(places[i], map, category, marker);
+	}
+	if (!startTime) {
+		startTime = new Date().getTime();
 	}
 }
 
@@ -69,21 +72,26 @@ function renderDestination(place, map, category, marker) {
 		var url = "/places/" + category + "/" + place.uid;
 
 		var rating = Number(place.rating);
-						var stars = '<div class="stars">';
-						var isOpen = calculateOpen(place);
-						var opentimes = calculateOpenTime(place);
-						var opentext = '<div class="open">' + ((isOpen) ? "open" : "closed") + opentimes+ "</div>";
-						while (rating > 0.6) {
-							stars += '<span class="icon-star"></span>';
-							rating -= 1;
-						}
-						if (rating < 0.6 && rating > 0.4) {
-							stars += '<span class="icon-star-half"></span>';
-						}
-						stars += '</div>';
+		var stars = '<div class="stars">';
+		var isOpen = calculateOpen(place);
+		var opentimes = calculateOpenTime(place);
+		var opentext = '<div class="open">' + ((isOpen) ? "open" : "closed") + opentimes+ "</div>";
+		while (rating > 0.6) {
+			stars += '<span class="icon-star"></span>';
+			rating -= 1;
+		}
+		if (rating < 0.6 && rating > 0.4) {
+			stars += '<span class="icon-star-half"></span>';
+		}
+		stars += '</div>';
+
+		var addedString = '<div class="place"><a class="place-link" id="'+ place.uid + '" href="' + url + '">' + 
+			place.place + '</a>' + opentext + stars + '</div>';
+		var $addedString = $(addedString);
+		$addedString.find('.place-link').on('click', clickAnalytics);
 
 		var infowindow = new google.maps.InfoWindow({
-			content: '<a href="' + url + '">' + place.place + '</a>' + opentext + stars
+			content: $addedString[0]
 		});
     infowindow.open(map,marker);
 	});

@@ -1,6 +1,6 @@
 'use strict';
 
-var cur, last;
+var cur, last, startTime;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -13,7 +13,7 @@ $(document).ready(function() {
 	// Load more
 	var category = $('.cat-name').text();
 	var num = 1;
-	var source   = '<li class="place"><a class="next" href="/places/' + category + '/{{uid}}">GO</a><div class="name">' +
+	var source   = '<li class="place"><a class="next place-link" id="{{uid}}" href="/places/' + category + '/{{uid}}">GO</a><div class="name">' +
 									'<a class="open-down icon-uniF48B"></a><div class="title">{{place}}</div>' +
 									'</div><div class="more-info"><div class="rating">{{rating}}</div>' +
 									'<div class="hours"></div><div class="site">' +
@@ -36,8 +36,8 @@ $(document).ready(function() {
 					var html = $(template(d));
 					html.appendTo('#places');
 					html.find('.name').on('click', placeClick);
+					html.find('.place-link').on('click', clickAnalytics);
 					setDirectionAndDistanceTo(d.address, function(datax) {
-						console.log(datax);
 						html.find('.name').append('<div class="info">' + datax + '</div>');
 					});
 
@@ -64,14 +64,25 @@ $(document).ready(function() {
 				if (!data[0].hasNext) {
 					$('.more').hide();
 				}
+				/* if (!startTime) {
+					startTime = new Date().getTime();
+				} */
 			}
 	}
 
 	getGeolocation(function(pos) {
 		cLongitude = pos.coords.longitude;
 		cLatitude = pos.coords.latitude;
-		$.ajax('/loadcat', ajaxObj);
+		if (location.href.match(/category/g)) {
+			$.ajax('/loadcat', ajaxObj);
+		}
 	});
+
+	if ($('#map-panel').length) {
+		google.maps.event.addDomListener(window, 'load', function() {
+			setDisplayTo($('#address').text(), 'map-panel');
+		});
+	}
 	
 
 	if ($('.is-multipage').text() == false) $('.more').hide();
@@ -94,8 +105,34 @@ $(document).ready(function() {
 		$(this).html(stars);
 	});
 
+	/* $('.dir-link').click(function() {
+		e.preventDefault();
+		var start = getParameterByName(time);
+		if (start) {
+			var sTime = Number(start);
+			var eTime = new Date().getTime();
+			var duration = eTime - sTime;
+			ga('send', 'timing', 'from-category', 'to-directions', timeSpent, $('.uid').text());
+		}
+		location.href = $(this).attr('href');
+	}); */
 
 });
+
+
+function clickAnalytics(e) {
+  e.preventDefault();
+	var place = $(this).attr('id');
+	ga('send', 'event', 'place', 'click', place);
+	location.href = $(this).attr('href'); // + "?time=" + startTime;
+}
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 
 function placeClick(e) {
 	var curIcon = $(this).parent().find('.open-down');
