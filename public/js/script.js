@@ -64,9 +64,9 @@ $(document).ready(function() {
 				if (!data[0].hasNext) {
 					$('.more').hide();
 				}
-				/* if (!startTime) {
+				if (!startTime) {
 					startTime = new Date().getTime();
-				} */
+				}
 			}
 	}
 
@@ -116,7 +116,7 @@ $(document).ready(function() {
 		$(this).html(stars);
 	});
 
-	/* $('.dir-link').click(function() {
+	$('.dir-link').click(function() {
 		e.preventDefault();
 		var start = getParameterByName(time);
 		if (start) {
@@ -126,7 +126,7 @@ $(document).ready(function() {
 			ga('send', 'timing', 'from-category', 'to-directions', timeSpent, $('.uid').text());
 		}
 		location.href = $(this).attr('href');
-	}); */
+	});
 
 });
 
@@ -135,7 +135,7 @@ function clickAnalytics(e) {
   e.preventDefault();
 	var place = $(this).attr('id');
 	ga('send', 'event', 'place', 'click', place);
-	location.href = $(this).attr('href'); // + "?time=" + startTime;
+	location.href = $(this).attr('href') + "?time=" + startTime;
 }
 
 function getParameterByName(name) {
