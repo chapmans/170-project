@@ -2,6 +2,8 @@
 
 var cur, last, startTime;
 
+var weekday = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	// Category page dropdown
@@ -116,17 +118,30 @@ $(document).ready(function() {
 		$(this).html(stars);
 	});
 
-	$('.dir-link').click(function() {
+	$('.dir-link').click(function(e) {
 		e.preventDefault();
-		var start = getParameterByName(time);
+		var start = getParameterByName('time');
 		if (start) {
 			var sTime = Number(start);
 			var eTime = new Date().getTime();
 			var duration = eTime - sTime;
-			ga('send', 'timing', 'from-category', 'to-directions', timeSpent, $('.uid').text());
+			ga('send', 'timing', 'from-category', 'to-directions', duration, $('.uid').text());
 		}
 		location.href = $(this).attr('href');
 	});
+
+	var date = new Date();
+	var today = weekday[date.getDay()];
+	$('.' + today).css({fontWeight: 'bold'});
+
+	if ($('#store-hrs').length) {
+		var store = JSON.parse($('#store-hrs').text());
+		console.log(store);
+		var isOpen = calculateOpen(store);
+		var opentimes = calculateOpenTime(store);
+		$('#store-hrs').html(((isOpen) ? "open" : "closed") + opentimes);
+		$('#store-hrs').show();
+	}
 
 });
 
@@ -168,7 +183,7 @@ function placeClick(e) {
 	}
 }
 
-var weekday = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
 
 function timeformat(time) { // form: 6:00p, 12:00a, etc.
 	var ampm = time.charAt(time.length - 1);
@@ -184,13 +199,25 @@ function calculateOpen(store) {
 	var time = date.getTime();
 	var storetime = store.hours[today];
 	var open = false;
-	var curDate = date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate();
+	var curDate = date.getFullYear() + "-" + ((date.getMonth().toString().length == 1) ? "0" : "") + date.getMonth() + "-" + ((date.getMonth().toString().length == 1) ? "0" : "") + date.getDate();
+	var tomorrow = new Date(date.getTime() + 24 * 60 * 60 * 1000);
+	var tmDate = tomorrow.getFullYear() + "-" + ((date.getMonth().toString().length == 1) ? "0" : "") + tomorrow.getMonth() + "-" + ((date.getMonth().toString().length == 1) ? "0" : "") + tomorrow.getDate();
 	if (storetime[0] == '24h') return true;
 	else if (storetime[0] == '0h') return false;
 	else {
 		for (var i = 0; i < storetime.length; i+=2) {
-			var opentime = Date.parse(curDate + "T" + timeformat(storetime[i]));
+			/* var opentime = Date.parse(curDate + "T" + timeformat(storetime[i]));
 			var closetime = Date.parse(curDate + "T" + timeformat(storetime[i+1]));
+			if (storetime[i+1].slice(-1) == 'a') closetime = Date.parse(tmDate + "T" + timeformat(storetime[i+1]));
+			console.log(time.toString());
+			console.log(opentime.toString());
+			console.log(closetime.toString()); */
+			var opentime = Date.parse(date.toDateString() + " " + timeformat(storetime[i]));
+			var closetime = Date.parse(date.toDateString() + " " + timeformat(storetime[i+1]));
+			if (storetime[i+1].slice(-1) == 'a') closetime = Date.parse(tomorrow.toDateString() + " " + timeformat(storetime[i+1]));
+			console.log(time.toString());
+			console.log(opentime.toString());
+			console.log(closetime.toString());
 			if (time > opentime && time < closetime) return true;
 		}
 		return false;

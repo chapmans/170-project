@@ -25,6 +25,10 @@ a:hover .l-lt {
 
 }
 
+#store-hrs {
+  display:none;
+}
+
 .logo-name a, .logo-name-sm a {
   color:#F2AA39;
   text-shadow:

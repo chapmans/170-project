@@ -34,6 +34,10 @@ exports.map = function(req, res) {
 	var place = places.filter(function(val, i, arr) {
 		return uid == val.uid;
 	})[0];
+	var date = new Date();
+	var weekday = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+	var today = weekday[date.getDay()];
+	place.json = JSON.stringify(place);
 	place.category = cat;
 	res.render('map', place);
 }
