@@ -121,11 +121,13 @@ $(document).ready(function() {
 	$('.dir-link').click(function(e) {
 		e.preventDefault();
 		var start = getParameterByName('time');
+		var cc = getParameterByName('cc');
 		if (start) {
 			var sTime = Number(start);
 			var eTime = new Date().getTime();
 			var duration = eTime - sTime;
-			ga('send', 'timing', 'from-category', 'to-directions', duration, $('.uid').text());
+			console.log('from-category' + cc);
+			ga('send', 'timing', 'from-category' + cc, 'to-directions', duration, $('.uid').text());
 		}
 		location.href = $(this).attr('href');
 	});
@@ -150,7 +152,11 @@ function clickAnalytics(e) {
   e.preventDefault();
 	var place = $(this).attr('id');
 	ga('send', 'event', 'place', 'click', place);
-	location.href = $(this).attr('href') + "?time=" + startTime;
+	var clickedCat = ($('#cat2').length) ? "2" : "1";
+	var loc = $(this).attr('href') + "?time=" + startTime;
+	if ($('.cat-name').text() == 'coffee' || $('.cat-name').text() == 'desserts')
+		loc += "&cc=" + clickedCat;
+	location.href = loc;
 }
 
 function getParameterByName(name) {
@@ -215,9 +221,6 @@ function calculateOpen(store) {
 			var opentime = Date.parse(date.toDateString() + " " + timeformat(storetime[i]));
 			var closetime = Date.parse(date.toDateString() + " " + timeformat(storetime[i+1]));
 			if (storetime[i+1].slice(-1) == 'a') closetime = Date.parse(tomorrow.toDateString() + " " + timeformat(storetime[i+1]));
-			console.log(time.toString());
-			console.log(opentime.toString());
-			console.log(closetime.toString());
 			if (time > opentime && time < closetime) return true;
 		}
 		return false;
