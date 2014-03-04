@@ -7,6 +7,8 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var mongoose = require('mongoose');
+
 
 var index = require('./routes/index');
 var project = require('./routes/project');
@@ -23,6 +25,13 @@ var app = express();
         category: function(block) { return category; }
     }
 }); */
+
+// Mongoose
+
+var local_database_name = 'momandpop';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -55,7 +64,7 @@ app.get('/places/:category/:id/directions', project.directions);
 app.get('/loadcat', api.getPlaces);
 app.get('/loadplaces', api.getAllPlaces);
 app.get('/suggest', project.suggest);
-app.get('/suggest/thanks', project.suggestThanks);
+app.post('/suggest/send', project.suggestThanks);
 app.post('/flag', api.flag);
 
 http.createServer(app).listen(app.get('port'), function(){

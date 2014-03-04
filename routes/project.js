@@ -7,6 +7,8 @@ var data = {
 		music: require('../data/music.json')
 };
 
+var models = require('../models');
+
 exports.category = function(req, res) {
 	var cat = req.params.name;
 	var page = req.query.page;
@@ -76,5 +78,15 @@ exports.suggest = function(req, res) {
 }
 
 exports.suggestThanks = function(req, res) {
-	res.render('suggest-thanks');
+	var form_data = req.body;
+	console.log(form_data);
+
+  var newProject = new models.Suggestion(form_data);
+  newProject.save(function(err, projects) {
+  	if (err) {
+  		console.log(err);
+  		res.send(400);
+  	}
+  	res.render('suggest-thanks');
+  });
 }
