@@ -29,13 +29,24 @@ a:hover .l-lt {
   display:none;
 }
 
-.logo-name a, .logo-name-sm a {
+.logo-name a, .logo-name-sm a, a.head-link {
   color:#F2AA39;
   text-shadow:
    -2px -2px 0 rgba(255,255,255,0.5),  
     2px -2px 0 rgba(255,255,255,0.5),
     -2px 2px 0 rgba(255,255,255,0.5),
      2px 2px 0 rgba(255,255,255,0.5);
+}
+/*
+#map-pane {
+  margin-bottom:-30px;
+}
+*/
+
+.flagbutton {
+  background:#ff0000;
+  color:#fff;
+  margin-top:30px;
 }
 
 .city {
@@ -83,9 +94,20 @@ a:hover .l-lt {
   z-index:1;
 }
 
+.head-link {
+  font-size: 24px;
+  z-index:4;
+  line-height:50px;
+  position:absolute;
+}
+
 .logo-name-sm {
   font-size:24px;
-  text-align: right;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  text-align: center;
 }
 
 .logo-name-sm .logo-and {
@@ -107,10 +129,17 @@ a:hover .l-lt {
 .link-back {
   float: left;
   display: block;
+  left:10px;
+}
+
+.link-logo {
+  text-align: center;
 }
 
 .link-home {
-  text-align: center;
+  float:right;
+  display:block;
+  right:15px;
 }
 
 .smaller {
@@ -140,6 +169,7 @@ a:hover .l-lt {
 
 .topbar {
   background:rgba(255,255,255,0.4);
+  height:50px;
 }
 
 .topbar h1 {
@@ -162,6 +192,8 @@ h4 {
 .dir-link {
   font-family: 'Sniglet', sans-serif;
   font-size:18px;
+  background:#fff;
+  margin-bottom:15px;
 }
 
 .info {
@@ -184,6 +216,15 @@ h4 {
   display: none;
 }
 
+a.btn-moree {
+  margin-top: 15px;
+  background: #eee;
+}
+
+a.btn-moree:hover {
+  background:#fff;
+}
+
 .icon-star, .icon-star-half {
   margin-right:3px;
 }
@@ -201,7 +242,7 @@ a.cat-link {
 
 #places li {
   list-style: none;
-  margin: 5px 10px;
+  margin: 5px 0px;
   padding: 10px;
   background: rgba(255,255,255,0.2);
   border-bottom: rgba(150,150,150,0.5) 3px solid;
@@ -273,6 +314,32 @@ a.icon-uniF48A {
   color:#FF803C;
 }*/
 
+.fader {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  z-index:10;
+}
+
+#flag-popup {
+  position:fixed;
+  top:25%;
+  left:10%;
+  width:80%;
+  height:50%;
+  padding:3%;
+  z-index:20;
+  background:#ffffff;
+  text-align: center;
+}
+
+#flag-popup .act {
+  margin-top:20px;
+}
+
 .pm {
 	height: 150px;
 }
@@ -320,4 +387,16 @@ a.icon-uniF48A {
 .store-image {
 	max-height:150px;
 	overflow:hidden;
+}
+
+.store-image img {
+  display:block;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.ok {
+  background:#ffff00;
+  margin-bottom:10px;
 }

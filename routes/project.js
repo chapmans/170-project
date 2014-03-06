@@ -17,6 +17,7 @@ exports.category = function(req, res) {
 	print.catcoffee = (cat == 'coffee');
 	print.catdesserts = (cat == 'desserts');
 	print.mapcat = false;
+	print.back = '/';
 	res.render('category', print);
 }
 
@@ -26,6 +27,7 @@ exports.category2 = function(req, res) {
 	var print = data[cat];
 	print.multipage = (data[cat].places[1] == null) ? false : true;
 	print.mapcat = true;
+	print.back = '/';
 	res.render('category2', print);
 }
 
@@ -41,6 +43,7 @@ exports.map = function(req, res) {
 	var today = weekday[date.getDay()];
 	place.json = JSON.stringify(place);
 	place.category = cat;
+	place.back = '/category/' + cat;
 	res.render('map', place);
 }
 
@@ -52,19 +55,21 @@ exports.directions = function(req, res) {
 		return uid == val.uid;
 	})[0];
 	place.category = cat;
+	place.back = '/places/' + cat + '/' + uid;
 	res.render('directions', place);
 }
 
 exports.about = function(req, res) {
-	res.render('about');
+	res.render('about', {back: '/'});
 }
 
 exports.help = function(req, res) {
-	res.render('help');
+	res.render('help', {back: '/'});
 }
 
 exports.suggest = function(req, res) {
 	var cat = req.query.cat;
+	var backText = '/category/' + cat;
 	var catCheck = {
 		category: cat,
 		coffee: cat == 'coffee',
@@ -72,7 +77,8 @@ exports.suggest = function(req, res) {
 		music: cat == 'music',
 		clothing: cat == 'clothing',
 		restaurants: cat == 'restaurants',
-		trinkets: cat == 'trinkets'
+		trinkets: cat == 'trinkets',
+		back: backText
 	}
 	res.render('suggest', catCheck);
 }
@@ -87,6 +93,6 @@ exports.suggestThanks = function(req, res) {
   		console.log(err);
   		res.send(400);
   	}
-  	res.render('suggest-thanks');
+  	res.render('suggest-thanks', {back: '/suggest'});
   });
 }

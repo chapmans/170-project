@@ -1,6 +1,6 @@
 {{> header}}
 
-	<div class="store-image">
+	<div class="store-image row">
 		<img src="/images/stores/{{place}}.jpg" class="img-responsive">
 	</div>
 
@@ -28,7 +28,8 @@
 
 	<div class="row">
 		<div class="col-md-12 col-xs-12 text-right">
-			<a href="/places/{{category}}/{{uid}}/directions" class="btn btn-more dir-link">directions <span class="icon-uniF488"></span></a>
+			
+			<a href="/places/{{category}}/{{uid}}/directions" class="btn btn-more dir-link">Directions <span class="icon-automobile"></span></a>
 		</div>
 	</div>
 
@@ -38,7 +39,11 @@
 		<img src="/images/maps/{{uid}}.png" class="img-responsive">
 	</div>
 	
-
+	<div class="row">
+		<div class="col-md-12 col-xs-12">
+			<button class="btn btn-more flagbutton center-block" id="flag"><span class="icon-flag2"></span> Is this not a mom&pop store?</button>
+		</div>
+	</div>
 	
 
 {{> footer}}

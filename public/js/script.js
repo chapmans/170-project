@@ -145,6 +145,27 @@ $(document).ready(function() {
 		$('#store-hrs').show();
 	}
 
+	// flag button
+
+	$('#flag').click(function(e) {
+		var fader = '<div class="fader"></div>';
+		var $fader = $(fader);
+		var flagHTML = '<div id="flag-popup"><button type="button" id="fbut" class="close" aria-hidden="true">&times;</button>' +
+									'<div class="act"><p>Do you want to flag this page?</p><button class="ok btn">Yes, this is not a mom and pop ' +
+									'store.</button><button class="xx btn">No, I clicked this on accident.</button></div></div>';
+		var $flagHTML = $(flagHTML);
+		$fader.appendTo('body');
+		$flagHTML.appendTo('body');
+		$('.close, .fader, .xx').click(function(e) {
+			$fader.remove();
+			$flagHTML.remove();
+		})
+		$('.ok').click(function(e) {
+			var replacedText = '<p>Thanks for reporting this place! We\'ll look into it.</p>'
+			$('.act').html(replacedText);
+		});
+	});
+
 });
 
 

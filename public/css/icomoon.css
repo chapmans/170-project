@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-hcnroz');
-	src:url('../fonts/icomoon.eot?#iefix-hcnroz') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-hcnroz') format('woff'),
-		url('../fonts/icomoon.ttf?-hcnroz') format('truetype'),
-		url('../fonts/icomoon.svg?-hcnroz#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-2e01nq');
+	src:url('../fonts/icomoon.eot?#iefix-2e01nq') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-2e01nq') format('woff'),
+		url('../fonts/icomoon.ttf?-2e01nq') format('truetype'),
+		url('../fonts/icomoon.svg?-2e01nq#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -77,9 +77,6 @@
 .icon-uniF66E:before {
 	content: "\e611";
 }
-.icon-uniF68F:before {
-	content: "\e612";
-}
 .icon-uniF5F3:before {
 	content: "\e613";
 }
@@ -137,12 +134,6 @@
 .icon-uniF58B:before {
 	content: "\e625";
 }
-.icon-uniF627:before {
-	content: "\e626";
-}
-.icon-uniF5FD:before {
-	content: "\e627";
-}
 .icon-uniF62D:before {
 	content: "\e628";
 }
@@ -157,9 +148,6 @@
 }
 .icon-uniF7B7:before {
 	content: "\e62e";
-}
-.icon-uniF6EB:before {
-	content: "\e62f";
 }
 .icon-uniF744:before {
 	content: "\e630";
@@ -230,9 +218,87 @@
 .icon-instagram:before {
 	content: "\e646";
 }
+.icon-home:before {
+	content: "\e647";
+}
+.icon-uniF6EB:before {
+	content: "\e62f";
+}
+.icon-uniF5FD:before {
+	content: "\e627";
+}
+.icon-uniF627:before {
+	content: "\e626";
+}
+.icon-uniF68F:before {
+	content: "\e612";
+}
+.icon-uniF478:before {
+	content: "\e648";
+}
+.icon-uniF479:before {
+	content: "\e649";
+}
+.icon-circleup:before {
+	content: "\e64a";
+}
+.icon-circleright:before {
+	content: "\e64b";
+}
+.icon-circledown:before {
+	content: "\e64c";
+}
+.icon-thumbup:before {
+	content: "\e64d";
+}
+.icon-thumbdown:before {
+	content: "\e64e";
+}
+.icon-flag2:before {
+	content: "\e64f";
+}
+.icon-psleft:before {
+	content: "\e650";
+}
+.icon-psup:before {
+	content: "\e651";
+}
+.icon-flag:before {
+	content: "\e652";
+}
+.icon-intersection:before {
+	content: "\e653";
+}
+.icon-uniF63E:before {
+	content: "\e654";
+}
+.icon-uniF63F:before {
+	content: "\e655";
+}
+.icon-uniF579:before {
+	content: "\e656";
+}
+.icon-comment2:before {
+	content: "\e657";
+}
+.icon-roadsign:before {
+	content: "\e658";
+}
+.icon-automobile:before {
+	content: "\e659";
+}
+.icon-freeway:before {
+	content: "\e65a";
+}
 .icon-star:before {
 	content: "\e62c";
 }
 .icon-star-half:before {
 	content: "\e62d";
+}
+.icon-flag3:before {
+	content: "\e65b";
+}
+.icon-direction:before {
+	content: "\e65c";
 }
