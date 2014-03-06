@@ -15,7 +15,7 @@ $(document).ready(function() {
 	// Load more
 	var category = $('.cat-name').text();
 	var num = 1;
-	var source   = '<li class="place"><a class="next place-link" id="{{uid}}" href="/places/' + category + '/{{uid}}">GO</a><div class="name">' +
+	var source   = '<li class="place"><a class="next place-link" id="{{uid}}" href="/places/' + category + '/{{uid}}">Go <span class="icon-circleright"></span></a><div class="name">' +
 									'<a class="open-down icon-uniF48B"></a><div class="title">{{place}}</div>' +
 									'</div><div class="more-info"><div class="rating">{{rating}}</div>' +
 									'<div class="hours"></div><div class="site">' +
@@ -151,7 +151,7 @@ $(document).ready(function() {
 		var fader = '<div class="fader"></div>';
 		var $fader = $(fader);
 		var flagHTML = '<div id="flag-popup"><button type="button" id="fbut" class="close" aria-hidden="true">&times;</button>' +
-									'<div class="act"><p>Do you want to flag this page?</p><button class="ok btn">Yes, this is not a mom and pop ' +
+									'<div class="act"><p>Do you want to flag this page?</p><button class="ok btn">Yes, this is not a<br>mom and pop ' +
 									'store.</button><button class="xx btn">No, I clicked this on accident.</button></div></div>';
 		var $flagHTML = $(flagHTML);
 		$fader.appendTo('body');

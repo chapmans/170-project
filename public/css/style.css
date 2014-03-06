@@ -8,6 +8,10 @@ a, a:active, a:hover {
   text-decoration: none;
 }
 
+.btn {
+  font-family:'Patua One', 'Bitter', serif;
+}
+
 a {
   color:#286F7E;
 }
@@ -47,6 +51,12 @@ a:hover .l-lt {
   background:#ff0000;
   color:#fff;
   margin-top:30px;
+}
+
+.flagbutton span {
+  padding-right:5px;
+  position:relative;
+  top:1px;
 }
 
 .city {
@@ -156,7 +166,7 @@ a:hover .l-lt {
 }
 
 .p-category, #place-name {
-  font-family: 'Sniglet', serif;
+  font-family: 'Patua One', 'Sniglet', serif;
   font-size:36px;
   text-transform: capitalize;
   text-align: center;
@@ -190,10 +200,17 @@ h4 {
 }
 
 .dir-link {
-  font-family: 'Sniglet', sans-serif;
+  font-family: 'Patua One', sans-serif;
   font-size:18px;
   background:#fff;
   margin-bottom:15px;
+}
+
+.dir-link span {
+  font-size:16px;
+  margin-left:5px;
+  position:relative;
+  top:1px;
 }
 
 .info {
@@ -232,6 +249,7 @@ a.btn-moree:hover {
 a.cat-link {
   display: block;
   text-decoration:none;
+  font-family:'Patua One', 'Bitter', serif;
   /* font-weight: bold; */
 }
 
@@ -259,20 +277,28 @@ a.cat-link {
 
 .place .next {
   height:100%;
-  font-size:20px;
-  line-height:40px;
-  font-family:'Flamenco', sans-serif;
+  font-size:18px;
+  font-family:'Patua One', sans-serif;
   float:right;
   display:inline-block;
   vertical-align: middle;
   text-align:center;
-  width:40px;
-  height:40px;
+  padding:3px 5px;
   background:#339DA3;
   color:#dfdfdf;
-    -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
+    -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.place > * {
+  vertical-align: middle;
+}
+
+.place .next span {
+  font-size:16px;
+  position:relative;
+  top:1px;
 }
 
 .place .rating {
